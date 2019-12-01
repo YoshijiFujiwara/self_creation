@@ -1,0 +1,12 @@
+version: "3"
+services:
+  mother:
+    container_name: mother
+    build:
+      context: .
+    volumes:
+      - ./:/mother
+    privileged: true
+    tty: true
+    ports:
+      - 3000:3000
