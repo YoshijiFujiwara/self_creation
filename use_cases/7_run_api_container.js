@@ -4,15 +4,14 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 const {exec} = require('child_process');
-
 const { motherDir, dockerComposeFile } = require('./0_create_mother_container');
 
 const dockerExecCommand = `docker-compose -f ${motherDir}/${dockerComposeFile} exec -T mother `;
 
-rl.question('フロントエンド用のコンテナを起動しますか？(y/n)', async (answer) => {
+rl.question('apiコンテナを起動しますか？(y/n)', async (answer) => {
   if (answer.toLowerCase() !== 'y') rl.close();
 
-  await exec(`${dockerExecCommand} docker-compose -f inner-docker-compose.yml up -d front`, (err, stdout, stderr) => {
+  await exec(`${dockerExecCommand} docker-compose -f inner-docker-compose.yml up -d api`, (err, stdout, stderr) => {
     if (err) throw err;
 
     console.log(`stdout: ${stdout}`);

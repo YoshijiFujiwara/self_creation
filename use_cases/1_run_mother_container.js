@@ -1,11 +1,10 @@
 const readline = require('readline');
-const {exec} = require('child_process');
-const { motherDir, dockerComposeFile } = require('./0_create_mother_container_manifest');
-
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
+const {exec} = require('child_process');
+const { motherDir, dockerComposeFile } = require('./0_create_mother_container');
 
 if (require.main === module) {
   rl.question('motherコンテナを動かしますか？(y/n)', async (answer) => {

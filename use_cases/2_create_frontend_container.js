@@ -1,11 +1,16 @@
 const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 const fs = require('fs');
 const {exec} = require('child_process');
 const innerDockerComposeFile = 'inner-docker-compose.yml';
-const { motherDir, dockerComposeFile } = require('./0_create_mother_container_manifest');
 
+const { motherDir, dockerComposeFile } = require('./0_create_mother_container');
 // 各種インストールするライブラリのバージョン
 const createReactAppVersion = '3.2.0';
+
 const frontDirectory = 'front';
 
 const initDockerCompose = `version: "3"
@@ -39,11 +44,6 @@ RUN npm install react-scripts@3.2.0 -g --silent
 CMD [\"npm\", \"start\"]`;
 
 const dockerExecCommand = `docker-compose -f ${motherDir}/${dockerComposeFile} exec -T mother `;
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
 
 rl.question('フロントエンド用のコンテナを作成しますか？(y/n)', async (answer) => {
   if (answer.toLowerCase() !== 'y') rl.close();

@@ -1,14 +1,12 @@
 const readline = require('readline');
-const fs = require('fs');
-const {exec} = require('child_process');
-
-const dockerComposeFile = 'docker-compose.yml';
-const motherDir = '../mother2'; // TODO: これはあとで変更する必要あるか もしくは指定できるようにするか　最終的にはハッシュか何かだろうけど
-
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
+const fs = require('fs');
+const dockerComposeFile = 'docker-compose.yml';
+
+const motherDir = '../mother2'; // TODO: これはあとで変更する必要あるか もしくは指定できるようにするか　最終的にはハッシュか何かだろうけど
 
 const dockerFileContents = `FROM docker:19.03.5-dind
 
