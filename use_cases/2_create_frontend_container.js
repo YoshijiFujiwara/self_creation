@@ -1,17 +1,17 @@
-const readline = require('readline');
+const readline = require("readline");
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
-const fs = require('fs');
-const {exec} = require('child_process');
-const innerDockerComposeFile = 'inner-docker-compose.yml';
+const fs = require("fs");
+const { exec } = require("child_process");
+const innerDockerComposeFile = "inner-docker-compose.yml";
 
-const { motherDir, dockerComposeFile } = require('./0_create_mother_container');
+const { motherDir, dockerComposeFile } = require("./0_create_mother_container");
 // 各種インストールするライブラリのバージョン
-const createReactAppVersion = '3.2.0';
+const createReactAppVersion = "3.1.2";
 
-const frontDirectory = 'front';
+const frontDirectory = "front";
 
 const initDockerCompose = `version: "3"
 services:`;
@@ -38,35 +38,54 @@ WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 
 COPY package.json /app/package.json
-RUN npm install --silent
-RUN npm install react-scripts@3.2.0 -g --silent
+RUN npm install
+RUN npm install react-scripts@3.2.0 -g
+RUN npm install @material-ui/core
+RUN npm install @material-ui/icons
 
 CMD [\"npm\", \"start\"]`;
 
+const dockerIgnore = `node_modules`;
+
 const dockerExecCommand = `docker-compose -f ${motherDir}/${dockerComposeFile} exec -T mother `;
 
-rl.question('フロントエンド用のコンテナを作成しますか？(y/n)', async (answer) => {
-  if (answer.toLowerCase() !== 'y') rl.close();
+rl.question("フロントエンド用のコンテナを作成しますか？(y/n)", async answer => {
+  if (answer.toLowerCase() !== "y") rl.close();
 
   // create-react-app front でfront用のプロジェクト作成
   // docker-compose exec で複数のコマンドを実行するのに、 sh -c　をつけている
   // sh -c "echo '"'${frontDockerFile}'"' > hoge" で正しくエスケープできる
-  await exec(`${dockerExecCommand} sh -c "npm install -g create-react-app@${createReactAppVersion} ; create-react-app ${frontDirectory} ; echo '"'${frontDockerFile}'"' > ./${frontDirectory}/Dockerfile"`, (err, stdout, stderr) => {
-    if (err) throw err;
+  await exec(
+    `${dockerExecCommand} sh -c "npm install -g create-react-app ;
+     npx create-react-app ${frontDirectory} ;
+      echo '"'${frontDockerFile}'"' > ./${frontDirectory}/Dockerfile;
+      echo '"'${dockerIgnore}'"' > ./${frontDirectory}/.dockerignore;" ;`,
+    (err, stdout, stderr) => {
+      if (err) throw err;
 
-    console.log(`stdout: ${stdout}`);
-    console.log(`stderr: ${stderr}`);
-  });
+      console.log(`stdout: ${stdout}`);
+      console.log(`stderr: ${stderr}`);
+    }
+  );
 
   // inner-docker-compose.ymlがなければ作成する
   if (!fs.existsSync(`${motherDir}/${innerDockerComposeFile}`)) {
-    await fs.writeFile(`${motherDir}/${innerDockerComposeFile}`, initDockerCompose, function (err) {
-      if (err) throw err;
-    });
+    await fs.writeFile(
+      `${motherDir}/${innerDockerComposeFile}`,
+      initDockerCompose,
+      function(err) {
+        if (err) throw err;
+      }
+    );
   }
 
-  await fs.appendFile(`${motherDir}/${innerDockerComposeFile}`, frontService, function (err) {
-    if (err) throw err;
-  });
+  await fs.appendFile(
+    `${motherDir}/${innerDockerComposeFile}`,
+    frontService,
+    function(err) {
+      if (err) throw err;
+    }
+  );
+
   rl.close();
 });

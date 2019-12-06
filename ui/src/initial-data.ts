@@ -42,13 +42,8 @@ const initialData: InitialDataType = {
       title: 'In progress',
       taskIds: [],
     },
-    column_3: {
-      id: 'column_3',
-      title: 'Done',
-      taskIds: [],
-    },
   },
-  columnOrders: ['column_1', 'column_2', 'column_3'],
+  columnOrders: ['column_1', 'column_2'],
 };
 
 export default initialData;

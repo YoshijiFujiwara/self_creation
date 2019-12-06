@@ -1,12 +1,12 @@
-const readline = require('readline');
+const readline = require("readline");
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
-const fs = require('fs');
-const dockerComposeFile = 'docker-compose.yml';
+const fs = require("fs");
+const dockerComposeFile = "docker-compose.yml";
 
-const motherDir = '../mother2'; // TODO: これはあとで変更する必要あるか もしくは指定できるようにするか　最終的にはハッシュか何かだろうけど
+const motherDir = "../mother2"; // TODO: これはあとで変更する必要あるか もしくは指定できるようにするか　最終的にはハッシュか何かだろうけど
 
 const dockerFileContents = `FROM docker:19.03.5-dind
 
@@ -29,31 +29,43 @@ services:
     privileged: true
     tty: true
     ports:
-      - 3000:3000`;
+      - 3000:3000
+      - 8080:8080`;
 
 if (require.main === module) {
-  rl.question('motherコンテナ用Dockerfileを作成しますか？(y/n)', async (answer) => {
-    if (answer.toLowerCase() !== 'y') rl.close();
+  rl.question(
+    "motherコンテナ用Dockerfileを作成しますか？(y/n)",
+    async answer => {
+      if (answer.toLowerCase() !== "y") rl.close();
 
-    // create mother dir
-    await fs.mkdir(motherDir, { recursive: true }, (err) => {
-      if (err) throw err;
-    });
+      // create mother dir
+      await fs.mkdir(motherDir, { recursive: true }, err => {
+        if (err) throw err;
+      });
 
-    // create mother Dockerfile
-    await fs.writeFile(`${motherDir}/Dockerfile`, dockerFileContents, function (err) {
-      if (err) throw err;
-      console.log(`Dockerfile file created!`);
-    });
+      // create mother Dockerfile
+      await fs.writeFile(
+        `${motherDir}/Dockerfile`,
+        dockerFileContents,
+        function(err) {
+          if (err) throw err;
+          console.log(`Dockerfile file created!`);
+        }
+      );
 
-    // docker-compose.ymlを作成
-    await fs.writeFile(`${motherDir}/${dockerComposeFile}`, dockerComposeContents, function (err) {
-      if (err) throw err;
-      console.log(`${dockerComposeFile} file created!`);
-    });
+      // docker-compose.ymlを作成
+      await fs.writeFile(
+        `${motherDir}/${dockerComposeFile}`,
+        dockerComposeContents,
+        function(err) {
+          if (err) throw err;
+          console.log(`${dockerComposeFile} file created!`);
+        }
+      );
 
-    rl.close();
-  });
+      rl.close();
+    }
+  );
 }
 
 module.exports = {

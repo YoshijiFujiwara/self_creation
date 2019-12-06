@@ -4,16 +4,26 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 const { exec } = require("child_process");
-
 const { motherDir, dockerComposeFile } = require("./0_create_mother_container");
 
 const dockerExecCommand = `docker-compose -f ${motherDir}/${dockerComposeFile} exec -T mother `;
 
-rl.question("フロントエンド用のコンテナを起動しますか？(y/n)", async answer => {
+// コマンドを叩いたら、frontコンテナ内部のjsを直接更新できるようにする
+rl.question("コンテナ内部のコンテナになんかする(y/n)", async answer => {
   if (answer.toLowerCase() !== "y") rl.close();
 
   await exec(
-    `${dockerExecCommand} docker-compose -f inner-docker-compose.yml up -d --build front`,
+    `docker cp ../dummy_dir2/ mother:/mother`,
+    (err, stdout, stderr) => {
+      if (err) throw err;
+
+      console.log(`stdout: ${stdout}`);
+      console.log(`stderr: ${stderr}`);
+    }
+  );
+
+  await exec(
+    `${dockerExecCommand} docker cp ./dummy_dir2/ front:/app`,
     (err, stdout, stderr) => {
       if (err) throw err;
 

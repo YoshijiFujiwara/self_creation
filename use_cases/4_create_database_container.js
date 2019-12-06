@@ -1,11 +1,11 @@
-const readline = require('readline');
+const readline = require("readline");
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
-const fs = require('fs');
-const innerDockerComposeFile = 'inner-docker-compose.yml';
-const { motherDir } = require('./0_create_mother_container');
+const fs = require("fs");
+const innerDockerComposeFile = "inner-docker-compose.yml";
+const { motherDir } = require("./0_create_mother_container");
 
 const initDockerCompose = `version: "3"
 services:`;
@@ -37,18 +37,26 @@ const dbService = `
 volumes:
   my-db:`;
 
-rl.question('データベースコンテナを作成しますか？(y/n)', async (answer) => {
-  if (answer.toLowerCase() !== 'y') rl.close();
+rl.question("データベースコンテナを作成しますか？(y/n)", async answer => {
+  if (answer.toLowerCase() !== "y") rl.close();
 
   // inner-docker-compose.ymlがなければ作成する
   if (!fs.existsSync(`${motherDir}/${innerDockerComposeFile}`)) {
-    await fs.writeFile(`${motherDir}/${innerDockerComposeFile}`, initDockerCompose, function (err) {
-      if (err) throw err;
-    });
+    await fs.writeFile(
+      `${motherDir}/${innerDockerComposeFile}`,
+      initDockerCompose,
+      function(err) {
+        if (err) throw err;
+      }
+    );
   }
 
-  await fs.appendFile(`${motherDir}/${innerDockerComposeFile}`, dbService, function (err) {
-    if (err) throw err;
-  });
+  await fs.appendFile(
+    `${motherDir}/${innerDockerComposeFile}`,
+    dbService,
+    function(err) {
+      if (err) throw err;
+    }
+  );
   rl.close();
 });
