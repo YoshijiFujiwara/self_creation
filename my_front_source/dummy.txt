@@ -1,4 +1,0 @@
-dummy 
-text
-dummy
-text
