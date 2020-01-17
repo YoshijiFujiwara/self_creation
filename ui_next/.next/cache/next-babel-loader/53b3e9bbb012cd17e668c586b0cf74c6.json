@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default {\n  BOX: \"box\"\n};","map":{"version":3,"sources":["/Users/yoshiji/webdev/javascript/self_creation/ui_next/src/data/dnDItemTypes.ts"],"names":["BOX"],"mappings":"AAAA,eAAe;AACbA,EAAAA,GAAG,EAAE;AADQ,CAAf","sourcesContent":["export default {\n  BOX: \"box\"\n};\n"]},"metadata":{},"sourceType":"module"}

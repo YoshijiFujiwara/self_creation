@@ -3,6 +3,7 @@ const path = require("path");
 const withLess = require("@zeit/next-less");
 const lessToJS = require("less-vars-to-js");
 const fs = require("fs");
+/* eslint enable */
 
 // Where your antd-custom.less file lives
 const themeVariables = lessToJS(
