@@ -9,7 +9,8 @@
   ],
   "plugins": [
     "@typescript-eslint",
-    "react"
+    "react",
+    "import"
   ],
   "parser": "@typescript-eslint/parser",
   "env": {
@@ -26,6 +27,20 @@
   "rules": {
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/no-explicit-any": "off"
+    "@typescript-eslint/no-explicit-any": "off",
+    "import/order": ["error", {
+      "pathGroups": [
+        {
+          "pattern": "~/**",
+          "group": "external",
+          "position": "after"
+        }
+      ],
+      "pathGroupsExcludedImportTypes": ["builtin"],
+      "alphabetize": {
+        "order": "asc", /* sort in ascending order. Options: ['ignore', 'asc', 'desc'] */
+        "caseInsensitive": true /* ignore case. Options: [true, false] */
+      }
+    }]
   }
 }
