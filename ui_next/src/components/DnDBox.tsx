@@ -1,13 +1,14 @@
 import React from "react";
 import { useDrag } from "react-dnd";
 import dndItemTypes from "~/data/dndItemTypes";
-import "./dnd_box.less";
+import "~/components/dnd_box.less";
 
 export type BoxProps = {
   id: any;
   left: number;
   top: number;
   hideSourceOnDrag?: boolean;
+  onClick: Function;
 };
 
 const DndBox: React.FC<BoxProps> = ({
@@ -15,7 +16,8 @@ const DndBox: React.FC<BoxProps> = ({
   left,
   top,
   hideSourceOnDrag,
-  children
+  children,
+  onClick
 }) => {
   const [{ isDragging }, drag] = useDrag({
     item: { id, left, top, type: dndItemTypes.BOX },
@@ -28,7 +30,14 @@ const DndBox: React.FC<BoxProps> = ({
     return <div ref={drag} />;
   }
   return (
-    <div ref={drag} className="dnd_box" style={{ left, top }}>
+    <div
+      ref={drag}
+      className="dnd_box"
+      style={{ left, top }}
+      onClick={() => {
+        onClick();
+      }}
+    >
       {children}
     </div>
   );

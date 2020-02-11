@@ -1,88 +1,109 @@
+import { JSXElement } from "@babel/types";
+import MaterialButton from "@material-ui/core/Button";
+import { Layout, Menu, Icon } from "antd";
+import update from "immutability-helper";
+import { NextPage } from "next";
 import * as React from "react";
 import { useState } from "react";
-import { Layout, Menu, Icon } from "antd";
-import DefaultLayout from "~/layouts/default";
-import { NextPage } from "next";
-import { TMenuItem, TSubMenu } from "~/interfaces/menu";
-import subMenus from "~/data/subMenus";
+import { Dispatch } from "react";
+import { SetStateAction } from "react";
 import { DndProvider } from "react-dnd";
 import Backend from "react-dnd-html5-backend";
 import DnDContainer from "~/components/DnDContainer";
-import update from "immutability-helper";
+import LeftSider from "~/components/LeftSider";
+import RightSider from "~/components/RightSider";
+import componentGroups from "~/data/materialComponents";
+import { TComponent, TProp } from "~/interfaces/menu";
+import DefaultLayout from "~/layouts/default";
 
 const { SubMenu } = Menu;
 const { Sider } = Layout;
 
+export type TBox = {
+  top: number;
+  left: number;
+  jsx: JSX.Element;
+  componentName: TComponent["title"];
+  onClick: Dispatch<SetStateAction<string>>;
+};
+export type TBoxes = {
+  [key: string]: TBox;
+};
 export type IndexPageState = {
-  boxes: { [key: string]: { top: number; left: number; title: string } };
+  boxes: TBoxes;
+};
+
+const makeId = (length: number): string => {
+  let result = "";
+  const characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  const charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
 };
 
 const IndexPage: NextPage = () => {
-  const [boxes, setBoxes] = useState<{
-    [key: string]: {
-      top: number;
-      left: number;
-      title: string;
-    };
-  }>({
-    a: { top: 20, left: 80, title: "Drag me around" },
-    b: { top: 180, left: 20, title: "Drag me too" }
-  });
+  const [selectedKey, setSelectedKey] = useState<string>("");
 
-  const makeId = (length: number): string => {
-    let result = "";
-    const characters =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    const charactersLength = characters.length;
-    for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result;
-  };
+  const [boxes, setBoxes]: [
+    TBoxes,
+    Dispatch<SetStateAction<TBoxes>>
+  ] = useState<TBoxes>({});
 
-  const addDnDBox = (title: string): void => {
+  const selectedComponentProps =
+    boxes[selectedKey] && boxes[selectedKey].jsx
+      ? boxes[selectedKey].jsx.props
+      : [];
+
+  const addDnDBox = (jsx: JSX.Element | undefined): void => {
     const key = makeId(5);
     setBoxes(
       update(boxes, {
+        // TODO: この部分、型指定が出来ないの、よろしくないのでは？
         $merge: {
-          [key]: { top: 180, left: 20, title }
+          [key]: {
+            top: 180,
+            left: 20,
+            jsx: jsx,
+            componentName: "Button",
+            onClick: () => setSelectedKey(key)
+          }
         }
       })
     );
   };
 
+  const updateBoxProps = (propName: string, value: any) => {
+    if (selectedKey === "" || !boxes[selectedKey].jsx) return;
+    const box = boxes[selectedKey];
+    // console.log(jsx.props.writable);
+    const newJsx = {
+      ...box.jsx,
+      props: {
+        ...box.jsx.props,
+        [propName]: value
+      }
+    };
+    setBoxes(
+      update(boxes, {
+        $merge: {
+          [selectedKey]: {
+            ...box,
+            jsx: newJsx
+          }
+        }
+      })
+    );
+  };
+
+  console.log("selected key = ", selectedKey);
+
   return (
     <DefaultLayout>
       <Layout>
-        <Sider width={200} style={{ background: "#fff" }}>
-          <Menu
-            mode="inline"
-            defaultSelectedKeys={["1"]}
-            defaultOpenKeys={["sub1"]}
-            style={{ height: "100%", borderRight: 0 }}
-          >
-            {subMenus.map((subMenu: TSubMenu, subMenuIndex: number) => (
-              <SubMenu
-                key={subMenuIndex}
-                title={
-                  <span>
-                    <Icon type={subMenu.iconType} />
-                    {subMenu.title}
-                  </span>
-                }
-              >
-                {subMenu.menuItems.map((item: TMenuItem, itemIndex: number) => (
-                  <Menu.Item
-                    key={`${subMenuIndex}-${itemIndex}`}
-                    onClick={(): void => addDnDBox(item.title)}
-                  >
-                    {item.title}
-                  </Menu.Item>
-                ))}
-              </SubMenu>
-            ))}
-          </Menu>
-        </Sider>
+        <LeftSider subMenus={componentGroups} selectMenu={addDnDBox} />
         <DndProvider backend={Backend}>
           <DnDContainer
             hideSourceOnDrag={true}
@@ -90,6 +111,10 @@ const IndexPage: NextPage = () => {
             setBoxes={setBoxes}
           />
         </DndProvider>
+        <RightSider
+          menuItems={selectedComponentProps}
+          onChange={updateBoxProps}
+        />
       </Layout>
     </DefaultLayout>
   );

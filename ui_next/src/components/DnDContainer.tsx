@@ -1,16 +1,16 @@
-import React from "react";
-import DnDBox from "./DnDBox";
-import "./dnd_container.less";
-import { IndexPageState } from "~/pages/index";
 import update from "immutability-helper";
+import React, { Dispatch, SetStateAction } from "react";
 import { useDrop, XYCoord } from "react-dnd";
+import DnDBox from "~/components/DnDBox";
+import "~/components/dnd_container.less";
 import dndItemTypes from "~/data/dndItemTypes";
 import { DragItem } from "~/interfaces/drag_item";
+import { TBoxes } from "~/pages";
 
 export type ContainerProps = {
   hideSourceOnDrag: boolean;
-  boxes: IndexPageState["boxes"];
-  setBoxes: Function;
+  boxes: TBoxes;
+  setBoxes: Dispatch<SetStateAction<TBoxes>>;
 };
 
 const DndContainer: React.FC<ContainerProps> = ({
@@ -42,7 +42,7 @@ const DndContainer: React.FC<ContainerProps> = ({
   return (
     <div ref={drop} className="dnd_container">
       {Object.keys(boxes).map(key => {
-        const { left, top, title } = boxes[key];
+        const { left, top, jsx, onClick } = boxes[key];
         return (
           <DnDBox
             key={key}
@@ -50,8 +50,9 @@ const DndContainer: React.FC<ContainerProps> = ({
             left={left}
             top={top}
             hideSourceOnDrag={hideSourceOnDrag}
+            onClick={onClick}
           >
-            {title}
+            {jsx}
           </DnDBox>
         );
       })}

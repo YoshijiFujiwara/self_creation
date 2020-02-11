@@ -93,6 +93,72 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/assign */ "core-js/library/fn/object/assign");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/define-properties */ "core-js/library/fn/object/define-properties");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "core-js/library/fn/object/define-property");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "core-js/library/fn/object/get-own-property-descriptor");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptors.js":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptors.js ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptors */ "core-js/library/fn/object/get-own-property-descriptors");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "core-js/library/fn/object/get-own-property-symbols");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
 /*!********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
@@ -104,10 +170,84 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "core
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
+/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
+/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
+
+function _extends() {
+  _extends = _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default.a || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+/***/ }),
+
 /***/ "./node_modules/antd/lib/icon/style/index.js":
 /*!***************************************************!*\
   !*** ./node_modules/antd/lib/icon/style/index.js ***!
   \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./node_modules/antd/lib/input/style/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/antd/lib/input/style/index.js ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -151,8 +291,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dnd */ "react-dnd");
 /* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dnd__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _data_dndItemTypes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ~/data/dndItemTypes */ "./src/data/dndItemTypes.ts");
-/* harmony import */ var _dnd_box_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dnd_box.less */ "./src/components/dnd_box.less");
-/* harmony import */ var _dnd_box_less__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_dnd_box_less__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_dnd_box_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ~/components/dnd_box.less */ "./src/components/dnd_box.less");
+/* harmony import */ var _components_dnd_box_less__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_dnd_box_less__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/yoshiji/webdev/javascript/self_creation/ui_next/src/components/DnDBox.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -165,7 +305,8 @@ const DndBox = ({
   left,
   top,
   hideSourceOnDrag,
-  children
+  children,
+  onClick
 }) => {
   const [{
     isDragging
@@ -186,7 +327,7 @@ const DndBox = ({
       ref: drag,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 30
       },
       __self: undefined
     });
@@ -199,9 +340,12 @@ const DndBox = ({
       left,
       top
     },
+    onClick: () => {
+      onClick();
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 33
     },
     __self: undefined
   }, children);
@@ -222,19 +366,19 @@ const DndBox = ({
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _DnDBox__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DnDBox */ "./src/components/DnDBox.tsx");
-/* harmony import */ var _dnd_container_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dnd_container.less */ "./src/components/dnd_container.less");
-/* harmony import */ var _dnd_container_less__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_dnd_container_less__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var immutability_helper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! immutability-helper */ "immutability-helper");
-/* harmony import */ var immutability_helper__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(immutability_helper__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-dnd */ "react-dnd");
-/* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_dnd__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var immutability_helper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! immutability-helper */ "immutability-helper");
+/* harmony import */ var immutability_helper__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(immutability_helper__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dnd */ "react-dnd");
+/* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_dnd__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_DnDBox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ~/components/DnDBox */ "./src/components/DnDBox.tsx");
+/* harmony import */ var _components_dnd_container_less__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ~/components/dnd_container.less */ "./src/components/dnd_container.less");
+/* harmony import */ var _components_dnd_container_less__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_dnd_container_less__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _data_dndItemTypes__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ~/data/dndItemTypes */ "./src/data/dndItemTypes.ts");
 
 var _jsxFileName = "/Users/yoshiji/webdev/javascript/self_creation/ui_next/src/components/DnDContainer.tsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
@@ -248,7 +392,7 @@ const DndContainer = ({
   setBoxes
 }) => {
   const moveBox = (id, left, top) => {
-    setBoxes(immutability_helper__WEBPACK_IMPORTED_MODULE_4___default()(boxes, {
+    setBoxes(immutability_helper__WEBPACK_IMPORTED_MODULE_1___default()(boxes, {
       [id]: {
         $merge: {
           left,
@@ -258,7 +402,7 @@ const DndContainer = ({
     }));
   };
 
-  const [, drop] = Object(react_dnd__WEBPACK_IMPORTED_MODULE_5__["useDrop"])({
+  const [, drop] = Object(react_dnd__WEBPACK_IMPORTED_MODULE_3__["useDrop"])({
     accept: _data_dndItemTypes__WEBPACK_IMPORTED_MODULE_6__["default"].BOX,
 
     drop(item, monitor) {
@@ -282,24 +426,252 @@ const DndContainer = ({
     const {
       left,
       top,
-      title
+      jsx,
+      onClick
     } = boxes[key];
-    return __jsx(_DnDBox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    return __jsx(_components_DnDBox__WEBPACK_IMPORTED_MODULE_4__["default"], {
       key: key,
       id: key,
       left: left,
       top: top,
       hideSourceOnDrag: hideSourceOnDrag,
+      onClick: onClick,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 47
       },
       __self: undefined
-    }, title);
+    }, jsx);
   }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (DndContainer);
+
+/***/ }),
+
+/***/ "./src/components/LeftSider.tsx":
+/*!**************************************!*\
+  !*** ./src/components/LeftSider.tsx ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var antd_lib_icon_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/icon/style */ "./node_modules/antd/lib/icon/style/index.js");
+/* harmony import */ var antd_lib_icon_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_icon_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/icon */ "antd/lib/icon");
+/* harmony import */ var antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd/lib/layout/style */ "./node_modules/antd/lib/layout/style/index.js");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd/lib/layout */ "antd/lib/layout");
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! antd/lib/menu/style */ "./node_modules/antd/lib/menu/style/index.js");
+/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! antd/lib/menu */ "antd/lib/menu");
+/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+
+var _jsxFileName = "/Users/yoshiji/webdev/javascript/self_creation/ui_next/src/components/LeftSider.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_6__["createElement"];
+
+const {
+  SubMenu
+} = antd_lib_menu__WEBPACK_IMPORTED_MODULE_5___default.a;
+const {
+  Sider
+} = antd_lib_layout__WEBPACK_IMPORTED_MODULE_3___default.a;
+
+const LeftSider = ({
+  subMenus,
+  selectMenu
+}) => {
+  return __jsx(Sider, {
+    width: 200,
+    style: {
+      background: "#fff"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    mode: "inline",
+    defaultSelectedKeys: ["1"],
+    defaultOpenKeys: ["sub1"],
+    style: {
+      height: "100%",
+      borderRight: 0
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }, subMenus.map((subMenu, subMenuIndex) => __jsx(SubMenu, {
+    key: subMenuIndex,
+    title: __jsx("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: undefined
+    }, __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      type: subMenu.iconType,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: undefined
+    }), subMenu.title),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: undefined
+  }, subMenu.components.map((item, itemIndex) => __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_5___default.a.Item, {
+    key: `${subMenuIndex}-${itemIndex}`,
+    onClick: () => {
+      selectMenu(item.jsx);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: undefined
+  }, item.title))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (LeftSider);
+
+/***/ }),
+
+/***/ "./src/components/RightSider.tsx":
+/*!***************************************!*\
+  !*** ./src/components/RightSider.tsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/input/style */ "./node_modules/antd/lib/input/style/index.js");
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/input */ "antd/lib/input");
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_icon_style__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd/lib/icon/style */ "./node_modules/antd/lib/icon/style/index.js");
+/* harmony import */ var antd_lib_icon_style__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_icon_style__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var antd_lib_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! antd/lib/icon */ "antd/lib/icon");
+/* harmony import */ var antd_lib_icon__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(antd_lib_icon__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! antd/lib/layout/style */ "./node_modules/antd/lib/layout/style/index.js");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! antd/lib/layout */ "antd/lib/layout");
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! antd/lib/menu/style */ "./node_modules/antd/lib/menu/style/index.js");
+/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! antd/lib/menu */ "antd/lib/menu");
+/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
+
+
+
+
+
+
+
+
+
+var _jsxFileName = "/Users/yoshiji/webdev/javascript/self_creation/ui_next/src/components/RightSider.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_9__["createElement"];
+
+const {
+  SubMenu
+} = antd_lib_menu__WEBPACK_IMPORTED_MODULE_8___default.a;
+const {
+  Sider
+} = antd_lib_layout__WEBPACK_IMPORTED_MODULE_6___default.a;
+
+const RightSider = ({
+  menuItems,
+  onChange
+}) => {
+  return __jsx(Sider, {
+    width: 200,
+    style: {
+      background: "#fff"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_8___default.a, {
+    mode: "inline",
+    defaultSelectedKeys: ["1"],
+    defaultOpenKeys: ["sub1"],
+    style: {
+      height: "100%",
+      borderRight: 0
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }, __jsx(SubMenu, {
+    key: "hogehoge" // TODO 直す
+    ,
+    title: __jsx("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: undefined
+    }, __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      type: "user",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: undefined
+    }), "\u30D7\u30ED\u30D1\u30C6\u30A3"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: undefined
+  }, _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default()(menuItems).map((propName, index) => __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_8___default.a.Item, {
+    key: index,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: undefined
+  }, __jsx(antd_lib_input__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    placeholder: propName,
+    value: menuItems[propName],
+    onChange: e => {
+      onChange(propName, e.target.value);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: undefined
+  }))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (RightSider);
 
 /***/ }),
 
@@ -340,115 +712,233 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/data/subMenus.ts":
-/*!******************************!*\
-  !*** ./src/data/subMenus.ts ***!
-  \******************************/
+/***/ "./src/data/materialComponents.tsx":
+/*!*****************************************!*\
+  !*** ./src/data/materialComponents.tsx ***!
+  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-const subMenus = [{
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Button */ "@material-ui/core/Button");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__);
+
+var _jsxFileName = "/Users/yoshiji/webdev/javascript/self_creation/ui_next/src/data/materialComponents.tsx";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+const buttonProps = [{
+  name: "children",
+  default: null
+}, {
+  name: "classes",
+  default: null
+}, {
+  name: "color",
+  default: "default"
+}, {
+  name: "component",
+  default: "button"
+}, {
+  name: "disabled",
+  default: false
+}, {
+  name: "disableElevation",
+  default: false
+}, {
+  name: "disableFocusRipple",
+  default: false
+}, {
+  name: "disableRipple",
+  default: null
+}, {
+  name: "endIcon",
+  default: null
+}, {
+  name: "fullWidth",
+  default: false
+}, {
+  name: "href",
+  default: null
+}, {
+  name: "size",
+  default: "medium"
+}, {
+  name: "startIcon",
+  default: null
+}, {
+  name: "variant",
+  default: "contained"
+}];
+const componentGroups = [{
   iconType: "user",
   title: "Layout",
-  menuItems: [{
-    title: "Box"
+  components: [{
+    title: "Box",
+    props: []
   }, {
-    title: "Container"
+    title: "Container",
+    props: []
   }, {
-    title: "Grid"
+    title: "Grid",
+    props: []
   }]
 }, {
   iconType: "user",
   title: "Inputs",
-  menuItems: [{
-    title: "Button"
+  components: [{
+    title: "Button",
+    jsx: __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, buttonProps.reduce((accumulator, currentValue) => {
+      accumulator[currentValue.name] = currentValue.default;
+      return accumulator;
+    }, {}), {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 80
+      },
+      __self: undefined
+    }), "\u30DC\u30BF\u30F3"),
+    props: buttonProps
   }, {
-    title: "Checkbox"
+    title: "Checkbox",
+    props: []
   }, {
-    title: "Date / Time"
+    title: "Date / Time",
+    props: []
   }, {
-    title: "Radio"
+    title: "Radio",
+    props: []
   }, {
-    title: "Select"
+    title: "Select",
+    props: []
   }, {
-    title: "Slider"
+    title: "Slider",
+    props: []
   }, {
-    title: "Switch"
+    title: "Switch",
+    props: []
   }, {
-    title: "Text Field"
+    title: "Text Field",
+    props: []
   }, {
-    title: "Transfer List"
+    title: "Transfer List",
+    props: []
   }]
 }, {
   iconType: "user",
   title: "Navigation",
-  menuItems: [{
-    title: "Bottom Navigation"
+  components: [{
+    title: "Bottom Navigation",
+    props: []
   }, {
-    title: "Breadcrumbs"
+    title: "Breadcrumbs",
+    props: []
   }, {
-    title: "Drawer"
+    title: "Drawer",
+    props: []
   }, {
-    title: "Link"
+    title: "Link",
+    props: []
   }, {
-    title: "Menu"
+    title: "Menu",
+    props: []
   }, {
-    title: "Stepper"
+    title: "Stepper",
+    props: []
   }, {
-    title: "Tabs"
+    title: "Tabs",
+    props: []
   }]
 }, {
   iconType: "user",
   title: "Surfaces",
-  menuItems: [{
-    title: "App Bar"
+  components: [{
+    title: "App Bar",
+    props: []
   }, {
-    title: "Paper"
+    title: "Paper",
+    props: [{
+      name: "children",
+      default: null
+    }, {
+      name: "classes",
+      default: null
+    }, {
+      name: "component",
+      default: "div"
+    }, {
+      name: "elevation",
+      default: 1
+    }, {
+      name: "square",
+      default: false
+    }, {
+      name: "variant",
+      default: "elevation"
+    }]
   }, {
-    title: "Card"
+    title: "Card",
+    props: []
   }, {
-    title: "Expansion Panel"
+    title: "Expansion Panel",
+    props: []
   }]
 }, {
   iconType: "user",
   title: "Feedback",
-  menuItems: [{
-    title: "Progress"
+  components: [{
+    title: "Progress",
+    props: []
   }, {
-    title: "Dialog"
+    title: "Dialog",
+    props: []
   }, {
-    title: "Snackbar"
+    title: "Snackbar",
+    props: []
   }, {
-    title: "Backdrop"
+    title: "Backdrop",
+    props: []
   }]
 }, {
   iconType: "user",
   title: "Data Display",
-  menuItems: [{
-    title: "Avatar"
+  components: [{
+    title: "Avatar",
+    props: []
   }, {
-    title: "Badge"
+    title: "Badge",
+    props: []
   }, {
-    title: "Chip"
+    title: "Chip",
+    props: []
   }, {
-    title: "Divider"
+    title: "Divider",
+    props: []
   }, {
-    title: "Icons"
+    title: "Icons",
+    props: []
   }, {
-    title: "Material Icons"
+    title: "Material Icons",
+    props: []
   }, {
-    title: "List"
+    title: "List",
+    props: []
   }, {
-    title: "Table"
+    title: "Table",
+    props: []
   }, {
-    title: "Tooltip"
+    title: "Tooltip",
+    props: []
   }, {
-    title: "Typography"
+    title: "Typography",
+    props: []
   }]
 }];
-/* harmony default export */ __webpack_exports__["default"] = (subMenus);
+/* harmony default export */ __webpack_exports__["default"] = (componentGroups);
 
 /***/ }),
 
@@ -585,29 +1075,45 @@ const DefaultLayout = ({
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var antd_lib_icon_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/icon/style */ "./node_modules/antd/lib/icon/style/index.js");
-/* harmony import */ var antd_lib_icon_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_icon_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var antd_lib_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/icon */ "antd/lib/icon");
-/* harmony import */ var antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd/lib/layout/style */ "./node_modules/antd/lib/layout/style/index.js");
-/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd/lib/layout */ "antd/lib/layout");
-/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! antd/lib/menu/style */ "./node_modules/antd/lib/menu/style/index.js");
-/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! antd/lib/menu */ "antd/lib/menu");
-/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _layouts_default__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ~/layouts/default */ "./src/layouts/default.tsx");
-/* harmony import */ var _data_subMenus__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ~/data/subMenus */ "./src/data/subMenus.ts");
-/* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-dnd */ "react-dnd");
-/* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_dnd__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var react_dnd_html5_backend__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-dnd-html5-backend */ "react-dnd-html5-backend");
-/* harmony import */ var react_dnd_html5_backend__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_dnd_html5_backend__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _components_DnDContainer__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ~/components/DnDContainer */ "./src/components/DnDContainer.tsx");
-/* harmony import */ var immutability_helper__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! immutability-helper */ "immutability-helper");
-/* harmony import */ var immutability_helper__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(immutability_helper__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-properties */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-descriptors */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptors.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! antd/lib/layout/style */ "./node_modules/antd/lib/layout/style/index.js");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! antd/lib/layout */ "antd/lib/layout");
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! antd/lib/menu/style */ "./node_modules/antd/lib/menu/style/index.js");
+/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! antd/lib/menu */ "antd/lib/menu");
+/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var immutability_helper__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! immutability-helper */ "immutability-helper");
+/* harmony import */ var immutability_helper__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(immutability_helper__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-dnd */ "react-dnd");
+/* harmony import */ var react_dnd__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_dnd__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var react_dnd_html5_backend__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-dnd-html5-backend */ "react-dnd-html5-backend");
+/* harmony import */ var react_dnd_html5_backend__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(react_dnd_html5_backend__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _components_DnDContainer__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ~/components/DnDContainer */ "./src/components/DnDContainer.tsx");
+/* harmony import */ var _components_LeftSider__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ~/components/LeftSider */ "./src/components/LeftSider.tsx");
+/* harmony import */ var _components_RightSider__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ~/components/RightSider */ "./src/components/RightSider.tsx");
+/* harmony import */ var _data_materialComponents__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ~/data/materialComponents */ "./src/data/materialComponents.tsx");
+/* harmony import */ var _layouts_default__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ~/layouts/default */ "./src/layouts/default.tsx");
+
+
+
+
+
 
 
 
@@ -615,7 +1121,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/yoshiji/webdev/javascript/self_creation/ui_next/src/pages/index.tsx";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_6__["createElement"];
+var __jsx = react__WEBPACK_IMPORTED_MODULE_12__["createElement"];
+
+function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(target, key, source[key]); }); } else if (_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default.a) { _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default()(target, _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default()(source)); } else { ownKeys(Object(source)).forEach(function (key) { _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, key, _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(source, key)); }); } } return target; }
+
+
+
 
 
 
@@ -626,134 +1139,115 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_6__["createElement"];
 
 const {
   SubMenu
-} = antd_lib_menu__WEBPACK_IMPORTED_MODULE_5___default.a;
+} = antd_lib_menu__WEBPACK_IMPORTED_MODULE_10___default.a;
 const {
   Sider
-} = antd_lib_layout__WEBPACK_IMPORTED_MODULE_3___default.a;
+} = antd_lib_layout__WEBPACK_IMPORTED_MODULE_8___default.a;
+
+const makeId = length => {
+  let result = "";
+  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  const charactersLength = characters.length;
+
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+
+  return result;
+};
 
 const IndexPage = () => {
   const {
+    0: selectedKey,
+    1: setSelectedKey
+  } = Object(react__WEBPACK_IMPORTED_MODULE_12__["useState"])("");
+  const {
     0: boxes,
     1: setBoxes
-  } = Object(react__WEBPACK_IMPORTED_MODULE_6__["useState"])({
-    a: {
-      top: 20,
-      left: 80,
-      title: "Drag me around"
-    },
-    b: {
-      top: 180,
-      left: 20,
-      title: "Drag me too"
-    }
-  });
+  } = Object(react__WEBPACK_IMPORTED_MODULE_12__["useState"])({});
+  const selectedComponentProps = boxes[selectedKey] && boxes[selectedKey].jsx ? boxes[selectedKey].jsx.props : [];
 
-  const makeId = length => {
-    let result = "";
-    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    const charactersLength = characters.length;
-
-    for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-
-    return result;
-  };
-
-  const addDnDBox = title => {
+  const addDnDBox = jsx => {
     const key = makeId(5);
-    setBoxes(immutability_helper__WEBPACK_IMPORTED_MODULE_12___default()(boxes, {
+    setBoxes(immutability_helper__WEBPACK_IMPORTED_MODULE_11___default()(boxes, {
+      // TODO: この部分、型指定が出来ないの、よろしくないのでは？
       $merge: {
         [key]: {
           top: 180,
           left: 20,
-          title
+          jsx: jsx,
+          componentName: "Button",
+          onClick: () => setSelectedKey(key)
         }
       }
     }));
   };
 
-  return __jsx(_layouts_default__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  const updateBoxProps = (propName, value) => {
+    if (selectedKey === "" || !boxes[selectedKey].jsx) return;
+    const box = boxes[selectedKey]; // console.log(jsx.props.writable);
+
+    const newJsx = _objectSpread({}, box.jsx, {
+      props: _objectSpread({}, box.jsx.props, {
+        [propName]: value
+      })
+    });
+
+    setBoxes(immutability_helper__WEBPACK_IMPORTED_MODULE_11___default()(boxes, {
+      $merge: {
+        [selectedKey]: _objectSpread({}, box, {
+          jsx: newJsx
+        })
+      }
+    }));
+  };
+
+  console.log("selected key = ", selectedKey);
+  return __jsx(_layouts_default__WEBPACK_IMPORTED_MODULE_19__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 104
     },
     __self: undefined
-  }, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_8___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 105
     },
     __self: undefined
-  }, __jsx(Sider, {
-    width: 200,
-    style: {
-      background: "#fff"
-    },
+  }, __jsx(_components_LeftSider__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    subMenus: _data_materialComponents__WEBPACK_IMPORTED_MODULE_18__["default"],
+    selectMenu: addDnDBox,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 106
     },
     __self: undefined
-  }, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    mode: "inline",
-    defaultSelectedKeys: ["1"],
-    defaultOpenKeys: ["sub1"],
-    style: {
-      height: "100%",
-      borderRight: 0
-    },
+  }), __jsx(react_dnd__WEBPACK_IMPORTED_MODULE_13__["DndProvider"], {
+    backend: react_dnd_html5_backend__WEBPACK_IMPORTED_MODULE_14___default.a,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 107
     },
     __self: undefined
-  }, _data_subMenus__WEBPACK_IMPORTED_MODULE_8__["default"].map((subMenu, subMenuIndex) => __jsx(SubMenu, {
-    key: subMenuIndex,
-    title: __jsx("span", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 68
-      },
-      __self: undefined
-    }, __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      type: subMenu.iconType,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 69
-      },
-      __self: undefined
-    }), subMenu.title),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65
-    },
-    __self: undefined
-  }, subMenu.menuItems.map((item, itemIndex) => __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_5___default.a.Item, {
-    key: `${subMenuIndex}-${itemIndex}`,
-    onClick: () => addDnDBox(item.title),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: undefined
-  }, item.title)))))), __jsx(react_dnd__WEBPACK_IMPORTED_MODULE_9__["DndProvider"], {
-    backend: react_dnd_html5_backend__WEBPACK_IMPORTED_MODULE_10___default.a,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86
-    },
-    __self: undefined
-  }, __jsx(_components_DnDContainer__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }, __jsx(_components_DnDContainer__WEBPACK_IMPORTED_MODULE_15__["default"], {
     hideSourceOnDrag: true,
     boxes: boxes,
     setBoxes: setBoxes,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 108
     },
     __self: undefined
-  }))));
+  })), __jsx(_components_RightSider__WEBPACK_IMPORTED_MODULE_17__["default"], {
+    menuItems: selectedComponentProps,
+    onChange: updateBoxProps,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: undefined
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (IndexPage);
@@ -772,6 +1266,17 @@ module.exports = __webpack_require__(/*! /Users/yoshiji/webdev/javascript/self_c
 
 /***/ }),
 
+/***/ "@material-ui/core/Button":
+/*!*******************************************!*\
+  !*** external "@material-ui/core/Button" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/Button");
+
+/***/ }),
+
 /***/ "antd/lib/icon":
 /*!********************************!*\
   !*** external "antd/lib/icon" ***!
@@ -780,6 +1285,17 @@ module.exports = __webpack_require__(/*! /Users/yoshiji/webdev/javascript/self_c
 /***/ (function(module, exports) {
 
 module.exports = require("antd/lib/icon");
+
+/***/ }),
+
+/***/ "antd/lib/input":
+/*!*********************************!*\
+  !*** external "antd/lib/input" ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/input");
 
 /***/ }),
 
@@ -802,6 +1318,72 @@ module.exports = require("antd/lib/layout");
 /***/ (function(module, exports) {
 
 module.exports = require("antd/lib/menu");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/assign":
+/*!***************************************************!*\
+  !*** external "core-js/library/fn/object/assign" ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/assign");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/define-properties":
+/*!**************************************************************!*\
+  !*** external "core-js/library/fn/object/define-properties" ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/define-properties");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/define-property":
+/*!************************************************************!*\
+  !*** external "core-js/library/fn/object/define-property" ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/define-property");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/get-own-property-descriptor":
+/*!************************************************************************!*\
+  !*** external "core-js/library/fn/object/get-own-property-descriptor" ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/get-own-property-descriptor");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/get-own-property-descriptors":
+/*!*************************************************************************!*\
+  !*** external "core-js/library/fn/object/get-own-property-descriptors" ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/get-own-property-descriptors");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/get-own-property-symbols":
+/*!*********************************************************************!*\
+  !*** external "core-js/library/fn/object/get-own-property-symbols" ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/get-own-property-symbols");
 
 /***/ }),
 
