@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="30911133-82d8-4d80-8cd6-15fd1e360577" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/api_server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fuga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hoge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_front_source/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_front_source/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_front_source/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_front_source/.idea/my_front_source.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_front_source/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_front_source/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dummy_dir2/hoge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dummy_dir2/hoge/fuga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dummy_dir2/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../material_sample/src/Album.js" beforeDir="false" afterPath="$PROJECT_DIR$/../material_sample/src/Album.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my_front_source/src/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../my_front_source/src/NavigationBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my_front_source/src/hoge.js" beforeDir="false" afterPath="$PROJECT_DIR$/../my_front_source/src/hoge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.next/cache/autodll-webpack-plugin/development_instance_0_af57f9701f8191875d84bb89896645aa/stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/.next/cache/autodll-webpack-plugin/development_instance_0_af57f9701f8191875d84bb89896645aa/stats.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.next/cache/autodll-webpack-plugin/package.json.hash" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/.next/cache/autodll-webpack-plugin/package.json.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.next/server/static/development/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/.next/server/static/development/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.next/server/static/development/pages/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/.next/server/static/development/pages/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.next/server/static/development/pages/next/dist/pages/_error.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.next/static/chunks/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/.next/static/chunks/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.next/static/chunks/styles.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/.next/static/chunks/styles.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.next/static/development/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/.next/static/development/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.next/static/development/pages/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/.next/static/development/pages/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.next/static/development/pages/next/dist/pages/_error.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.next/static/runtime/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/.next/static/runtime/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.next/static/runtime/webpack.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/.next/static/runtime/webpack.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.next/static/webpack/6264fa70d0ba24114855.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/.next/static/webpack/b491e00c714d73ddad2d.hot-update.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/.next/static/webpack/b491e00c714d73ddad2d.hot-update.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ui_next/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ui_next/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../use_cases/dummy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../use_cases/dummy2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../use_cases/dummy_dir2/hoge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../use_cases/dummy_dir2/hoge/fuga.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../use_cases/dummy_dir2/index.js" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="131" column="18" lean-forward="true" selection-start-line="131" selection-start-column="18" selection-end-line="131" selection-end-column="18" />
+              <folding>
+                <element signature="e#515#1915#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/escodegen-wallaby/escodegen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="2838" column="12" selection-start-line="2838" selection-start-column="12" selection-end-line="2838" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hoge.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="78" column="14" lean-forward="true" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fuga.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11268">
+              <caret line="603" column="3" selection-start-line="603" selection-start-column="3" selection-end-line="603" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&quot;.&quot;</find>
+      <find>&quot;\w&quot;</find>
+      <find>&quot;\w.&quot;</find>
+      <find>styles</find>
+      <find>variant</find>
+      <find>res.json</find>
+      <find>&quot;\w+&quot;:</find>
+      <find>propsat</find>
+      <find>&quot;(\w+)&quot;:</find>
+      <find>styleattribute</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>$1:</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/util.js" />
+        <option value="$PROJECT_DIR$/hoge.js" />
+        <option value="$PROJECT_DIR$/fuga.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="api_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api_server" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30911133-82d8-4d80-8cd6-15fd1e360577" name="Default Changelist" comment="" />
+      <created>1581414608524</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581414608524</updated>
+      <workItem from="1581414609695" duration="17689000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="17689000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <layout>
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.123568416" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="GraphQL" weight="0.32987553" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.4139004" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32987553" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fuga.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11268">
+          <caret line="603" column="3" selection-start-line="603" selection-start-column="3" selection-end-line="603" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hoge.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="78" column="14" lean-forward="true" selection-start-line="78" selection-start-column="14" selection-end-line="78" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/escodegen-wallaby/escodegen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="2838" column="12" selection-start-line="2838" selection-start-column="12" selection-end-line="2838" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="131" column="18" lean-forward="true" selection-start-line="131" selection-start-column="18" selection-end-line="131" selection-end-column="18" />
+          <folding>
+            <element signature="e#515#1915#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

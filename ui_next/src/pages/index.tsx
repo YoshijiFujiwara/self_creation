@@ -1,6 +1,7 @@
 import { JSXElement } from "@babel/types";
 import MaterialButton from "@material-ui/core/Button";
 import { Layout, Menu, Icon } from "antd";
+import axios from "axios";
 import update from "immutability-helper";
 import { NextPage } from "next";
 import * as React from "react";
@@ -78,7 +79,6 @@ const IndexPage: NextPage = () => {
   const updateBoxProps = (propName: string, value: any) => {
     if (selectedKey === "" || !boxes[selectedKey].jsx) return;
     const box = boxes[selectedKey];
-    // console.log(jsx.props.writable);
     const newJsx = {
       ...box.jsx,
       props: {
@@ -100,6 +100,18 @@ const IndexPage: NextPage = () => {
 
   console.log("selected key = ", selectedKey);
 
+  const saveBoxes = () => {
+    console.log("save boxes");
+    axios
+      .put("http://localhost:3456/save_boxes", boxes)
+      .then(res => {
+        console.log(res);
+      })
+      .catch(e => {
+        console.error(e);
+      });
+  };
+
   return (
     <DefaultLayout>
       <Layout>
@@ -116,6 +128,7 @@ const IndexPage: NextPage = () => {
           onChange={updateBoxProps}
         />
       </Layout>
+      <button onClick={() => saveBoxes()}>テスト用の保存ボタン</button>
     </DefaultLayout>
   );
 };
