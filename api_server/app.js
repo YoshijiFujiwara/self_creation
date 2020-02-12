@@ -1,27 +1,26 @@
-const fs = require('fs');
+const fs = require("fs");
 const express = require("express");
 const app = express();
-const cors = require('cors');
-const esprima = require('esprima');
-const estraverse = require('estraverse');
-const escodegen = require('escodegen-wallaby');
-const {JSToCSS} = require('./util');
+const cors = require("cors");
+const escodegen = require("escodegen-wallaby");
+const esprima = require("esprima");
+const estraverse = require("estraverse");
+const { JSToCSS } = require("./util");
 
 // TODO: ソースのファイルパス（今後、複数ファイルに書き出す必要があるが、一旦App.jsファイルに決め打ちする）
-const sourceFilePath = '../my_front_source/src/App.js';
+const sourceFilePath = "../my_front_source/src/App.js";
 
 app.use(cors());
 app.use(express.json());
 
 app.put("/save_boxes", (req, res) => {
-
   console.log(req);
   const boxes = req.body;
 
-  fs.readFile(sourceFilePath, 'utf8', async (err, data) => {
+  fs.readFile(sourceFilePath, "utf8", async (err, data) => {
     if (err) throw err;
     // ソースコードを書き換える
-    const ast = esprima.parseModule(data, {jsx: true});
+    const ast = esprima.parseModule(data, { jsx: true });
     // buttonのimport文を追加
     ast.body.unshift({
       type: "ImportDeclaration",
@@ -43,14 +42,17 @@ app.put("/save_boxes", (req, res) => {
 
     // buttonを追加する
     estraverse.replace(ast, {
-      enter: function (node, parent) {
-        if (node.type === 'ReturnStatement' && node.argument.type === 'JSXElement') {
+      enter: function(node, parent) {
+        if (
+          node.type === "ReturnStatement" &&
+          node.argument.type === "JSXElement"
+        ) {
           Object.keys(boxes).forEach((key, index) => {
-            const {left, top, jsx} = boxes[key];
-            console.log('box jsx element');
+            const { left, top, jsx } = boxes[key];
+            console.log("box jsx element");
             console.log(jsx.props);
 
-            console.log('button node');
+            console.log("button node");
             console.log(addButtonNode(left, top, jsx.props));
 
             // ノードの追加やで
@@ -59,7 +61,7 @@ app.put("/save_boxes", (req, res) => {
         }
         return node;
       },
-      fallback: 'iteration'
+      fallback: "iteration"
     });
 
     console.log("置換完了");
@@ -69,31 +71,30 @@ app.put("/save_boxes", (req, res) => {
     try {
       newFileContents = escodegen.generate(ast);
     } catch (e) {
-      console.log('error だぜ');
+      console.log("error だぜ");
       console.error(e);
     }
     console.log("new file contents", newFileContents);
 
-    fs.writeFile(sourceFilePath, newFileContents, 'utf8', (err) => {
+    fs.writeFile(sourceFilePath, newFileContents, "utf8", err => {
       console.error(err);
     });
-    res.json({message: 'success'});
+    res.json({ message: "success" });
   });
 });
 
 app.get("/move_box", (req, res, next) => {
-
-  const {style} = req.query;
+  const { style } = req.query;
 
   const cssInJs = JSToCSS(style);
 
-  fs.readFile(sourceFilePath, 'utf8', async (err, data) => {
+  fs.readFile(sourceFilePath, "utf8", async (err, data) => {
     if (err) throw err;
 
     // ソースコードを書き換える
-    const ast = esprima.parseModule(data, {jsx: true});
+    const ast = esprima.parseModule(data, { jsx: true });
 
-    res.json({ast: ast});
+    res.json({ ast: ast });
 
     // estraverse.replace(ast, {
     //   enter: function (node, parent) {
@@ -118,7 +119,6 @@ app.get("/move_box", (req, res, next) => {
     // res.json({message: ast});
   });
 });
-
 
 app.listen(3456, () => {
   console.log("Server running on port 3456");
@@ -187,48 +187,50 @@ function styleAttribute(left, top) {
         ]
       }
     }
-  }
+  };
 }
 
 function propsAttributes(props) {
-  return Object.keys(props).map((propName) => {
-    const propType = typeof props[propName];
+  return Object.keys(props)
+    .map(propName => {
+      const propType = typeof props[propName];
 
-    // 'children'はタグ内部に書く為
-    if (propName !== 'children' && props[propName] !== null) {
-      // 'Literal' か 'JSXExpressionContainer' で内容が異なる
-      if (propType === 'string') {
-        return {
-          type: "JSXAttribute",
-          name: {
-            type: "JSXIdentifier",
-            name: propName
-          },
-          value: {
-            type: "Literal",
-            value: String(props[propName]),
-            raw: `'${props[propName]}'`
-          }
-        };
-      } else {
-        return {
-          type: "JSXAttribute",
-          name: {
-            type: "JSXIdentifier",
-            name: propName
-          },
-          value: {
-            type: "JSXExpressionContainer",
-            expression: {
+      // 'children'はタグ内部に書く為
+      if (propName !== "children" && props[propName] !== null) {
+        // 'Literal' か 'JSXExpressionContainer' で内容が異なる
+        if (propType === "string") {
+          return {
+            type: "JSXAttribute",
+            name: {
+              type: "JSXIdentifier",
+              name: propName
+            },
+            value: {
               type: "Literal",
-              value: props[propName],
-              raw: String(props[propName])
+              value: String(props[propName]),
+              raw: `'${props[propName]}'`
             }
-          }
-        };
+          };
+        } else {
+          return {
+            type: "JSXAttribute",
+            name: {
+              type: "JSXIdentifier",
+              name: propName
+            },
+            value: {
+              type: "JSXExpressionContainer",
+              expression: {
+                type: "Literal",
+                value: props[propName],
+                raw: String(props[propName])
+              }
+            }
+          };
+        }
       }
-    }
-  }).filter(value => value);
+    })
+    .filter(value => value);
 }
 
 function addButtonNode(left, top, props) {
@@ -251,10 +253,7 @@ function addButtonNode(left, top, props) {
         name: "Button"
       },
       selfClosing: false,
-      attributes: [
-        ...propsAttributes(props),
-        styleAttribute(left, top)
-      ]
+      attributes: [...propsAttributes(props), styleAttribute(left, top)]
     },
     children: [
       {
@@ -338,10 +337,10 @@ function addButtonNode(left, top, props) {
     }
   ];
 
-  let childValue = '';
+  let childValue = "";
   Object.keys(props).forEach(propName => {
-    if (propName === 'children') {
-      childValue = props[propName] ? props[propName] : '';
+    if (propName === "children") {
+      childValue = props[propName] ? props[propName] : "";
       return;
     }
     if (props[propName] === null) return;
