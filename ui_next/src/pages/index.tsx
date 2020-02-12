@@ -1,7 +1,4 @@
-import { JSXElement } from "@babel/types";
-import MaterialButton from "@material-ui/core/Button";
 import { Layout, Menu, Icon } from "antd";
-import axios from "axios";
 import update from "immutability-helper";
 import { NextPage } from "next";
 import * as React from "react";
@@ -16,9 +13,8 @@ import RightSider from "~/components/RightSider";
 import componentGroups from "~/data/materialComponents";
 import { TComponent, TProp } from "~/interfaces/menu";
 import DefaultLayout from "~/layouts/default";
-
-const { SubMenu } = Menu;
-const { Sider } = Layout;
+import axiosInstance from "~/plugins/axios";
+import { makeId } from "~/utils";
 
 export type TBox = {
   top: number;
@@ -32,17 +28,6 @@ export type TBoxes = {
 };
 export type IndexPageState = {
   boxes: TBoxes;
-};
-
-const makeId = (length: number): string => {
-  let result = "";
-  const characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  const charactersLength = characters.length;
-  for (let i = 0; i < length; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-  }
-  return result;
 };
 
 const IndexPage: NextPage = () => {
@@ -102,8 +87,8 @@ const IndexPage: NextPage = () => {
 
   const saveBoxes = () => {
     console.log("save boxes");
-    axios
-      .put("http://localhost:3456/save_boxes", boxes)
+    axiosInstance
+      .put("/save_boxes", boxes)
       .then(res => {
         console.log(res);
       })

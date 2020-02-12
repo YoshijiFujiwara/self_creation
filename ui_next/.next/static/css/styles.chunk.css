@@ -1354,6 +1354,23 @@ html {
   background: #fff;
 }
 
+.dnd_box {
+  position: absolute;
+  cursor: move;
+}
+
+.dnd_container {
+  width: 100%;
+  height: 600px;
+  border: 1px solid black;
+  position: relative;
+}
+
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable */
@@ -2189,23 +2206,6 @@ html {
 .ant-tooltip-placement-bottomRight .ant-tooltip-arrow {
   right: 13px;
 }
-
-.dnd_box {
-  position: absolute;
-  cursor: move;
-}
-
-.dnd_container {
-  width: 100%;
-  height: 600px;
-  border: 1px solid black;
-  position: relative;
-}
-
-/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
-/* stylelint-disable no-duplicate-selectors */
-/* stylelint-disable */
-/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
 
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
