@@ -1,4 +1,4 @@
-import { Layout, Menu, Icon } from "antd";
+import { Layout } from "antd";
 import update from "immutability-helper";
 import { NextPage } from "next";
 import * as React from "react";
@@ -10,11 +10,12 @@ import Backend from "react-dnd-html5-backend";
 import DnDContainer from "~/components/DnDContainer";
 import LeftSider from "~/components/LeftSider";
 import RightSider from "~/components/RightSider";
-import componentGroups from "~/data/materialComponents";
-import { TComponent, TProp } from "~/interfaces/menu";
+import { RightSiderProps } from "~/components/RightSider";
+import componentGroups from "~/data/ui_frameworks/material_ui/component_groups";
+import { TComponent } from "~/interfaces/material_components";
 import DefaultLayout from "~/layouts/default";
 import axiosInstance from "~/plugins/axios";
-import { makeId } from "~/utils";
+import { makeRandomId } from "~/utils";
 
 export type TBox = {
   top: number;
@@ -28,6 +29,14 @@ export type TBoxes = {
 };
 export type IndexPageState = {
   boxes: TBoxes;
+};
+export type TRequestSave = {
+  [key: string]: {
+    top: number;
+    left: number;
+    jsx: JSX.Element;
+    componentName: TComponent["title"];
+  };
 };
 
 const IndexPage: NextPage = () => {
@@ -43,17 +52,18 @@ const IndexPage: NextPage = () => {
       ? boxes[selectedKey].jsx.props
       : [];
 
+  // TODO: マテリアルコンポーネントの設定が終わり、undefinedがくることがなくなれば、`| undefined`は除去する
   const addDnDBox = (jsx: JSX.Element | undefined): void => {
-    const key = makeId(5);
+    const key = makeRandomId(5);
     setBoxes(
       update(boxes, {
         // TODO: この部分、型指定が出来ないの、よろしくないのでは？
         $merge: {
           [key]: {
-            top: 180,
+            top: 180, // TODO: 初期値をハードコーディングしておる
             left: 20,
-            jsx: jsx,
-            componentName: "Button",
+            jsx,
+            componentName: "Button", // TODO: コンポーネントネームのハードコーディング
             onClick: () => setSelectedKey(key)
           }
         }
@@ -61,7 +71,10 @@ const IndexPage: NextPage = () => {
     );
   };
 
-  const updateBoxProps = (propName: string, value: any) => {
+  const updateBoxProps: RightSiderProps["onChange"] = (
+    propName: string,
+    value: any
+  ) => {
     if (selectedKey === "" || !boxes[selectedKey].jsx) return;
     const box = boxes[selectedKey];
     const newJsx = {
@@ -83,12 +96,16 @@ const IndexPage: NextPage = () => {
     );
   };
 
-  console.log("selected key = ", selectedKey);
-
   const saveBoxes = () => {
-    console.log("save boxes");
+    // stateのboxのonChangeプロパティ以外を渡す
+    const reqBody: TRequestSave = {};
+    Object.keys(boxes).forEach(key => {
+      const { top, left, jsx, componentName } = boxes[key];
+      reqBody[key] = { top, left, jsx, componentName };
+    });
+
     axiosInstance
-      .put("/save_boxes", boxes)
+      .put("/save_boxes", reqBody)
       .then(res => {
         console.log(res);
       })

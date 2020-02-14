@@ -58,3 +58,7 @@ export type TComponentGroup = {
     | "Data Display";
   components: TComponent[];
 };
+
+export type TComponentProps = {
+  [key: string]: any;
+};

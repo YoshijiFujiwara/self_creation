@@ -499,7 +499,7 @@ const LeftSider = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 21
     },
     __self: undefined
   }, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -512,7 +512,7 @@ const LeftSider = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 22
     },
     __self: undefined
   }, subMenus.map((subMenu, subMenuIndex) => __jsx(SubMenu, {
@@ -520,20 +520,20 @@ const LeftSider = ({
     title: __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 32
       },
       __self: undefined
     }, __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
       type: subMenu.iconType,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 33
       },
       __self: undefined
     }), subMenu.title),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 29
     },
     __self: undefined
   }, subMenu.components.map((item, itemIndex) => __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_5___default.a.Item, {
@@ -543,7 +543,7 @@ const LeftSider = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 39
     },
     __self: undefined
   }, item.title))))));
@@ -612,7 +612,7 @@ const RightSider = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 16
     },
     __self: undefined
   }, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_8___default.a, {
@@ -625,7 +625,7 @@ const RightSider = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 17
     },
     __self: undefined
   }, __jsx(SubMenu, {
@@ -634,27 +634,27 @@ const RightSider = ({
     title: __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 26
       },
       __self: undefined
     }, __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_4___default.a, {
       type: "user",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 27
       },
       __self: undefined
     }), "\u30D7\u30ED\u30D1\u30C6\u30A3"),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 23
     },
     __self: undefined
   }, _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default()(menuItems).map((propName, index) => __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_8___default.a.Item, {
     key: index,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 33
     },
     __self: undefined
   }, __jsx(antd_lib_input__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -665,7 +665,7 @@ const RightSider = ({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 34
     },
     __self: undefined
   }))))));
@@ -712,10 +712,272 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/data/materialComponents.tsx":
-/*!*****************************************!*\
-  !*** ./src/data/materialComponents.tsx ***!
-  \*****************************************/
+/***/ "./src/data/ui_frameworks/material_ui/component_groups/Data_Display/index.ts":
+/*!***********************************************************************************!*\
+  !*** ./src/data/ui_frameworks/material_ui/component_groups/Data_Display/index.ts ***!
+  \***********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const componentGroup = {
+  iconType: "user",
+  title: "Data Display",
+  components: [{
+    title: "Avatar",
+    props: []
+  }, {
+    title: "Badge",
+    props: []
+  }, {
+    title: "Chip",
+    props: []
+  }, {
+    title: "Divider",
+    props: []
+  }, {
+    title: "Icons",
+    props: []
+  }, {
+    title: "Material Icons",
+    props: []
+  }, {
+    title: "List",
+    props: []
+  }, {
+    title: "Table",
+    props: []
+  }, {
+    title: "Tooltip",
+    props: []
+  }, {
+    title: "Typography",
+    props: []
+  }]
+};
+/* harmony default export */ __webpack_exports__["default"] = (componentGroup);
+
+/***/ }),
+
+/***/ "./src/data/ui_frameworks/material_ui/component_groups/Feedback/index.ts":
+/*!*******************************************************************************!*\
+  !*** ./src/data/ui_frameworks/material_ui/component_groups/Feedback/index.ts ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const componentGroup = {
+  iconType: "user",
+  title: "Feedback",
+  components: [{
+    title: "Progress",
+    props: []
+  }, {
+    title: "Dialog",
+    props: []
+  }, {
+    title: "Snackbar",
+    props: []
+  }, {
+    title: "Backdrop",
+    props: []
+  }]
+};
+/* harmony default export */ __webpack_exports__["default"] = (componentGroup);
+
+/***/ }),
+
+/***/ "./src/data/ui_frameworks/material_ui/component_groups/Inputs/index.ts":
+/*!*****************************************************************************!*\
+  !*** ./src/data/ui_frameworks/material_ui/component_groups/Inputs/index.ts ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _data_ui_frameworks_material_ui_components_Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ~/data/ui_frameworks/material_ui/components/Button */ "./src/data/ui_frameworks/material_ui/components/Button/index.ts");
+
+const componentGroup = {
+  iconType: "user",
+  title: "Inputs",
+  components: [_data_ui_frameworks_material_ui_components_Button__WEBPACK_IMPORTED_MODULE_0__["component"], {
+    title: "Checkbox",
+    props: []
+  }, {
+    title: "Date / Time",
+    props: []
+  }, {
+    title: "Radio",
+    props: []
+  }, {
+    title: "Select",
+    props: []
+  }, {
+    title: "Slider",
+    props: []
+  }, {
+    title: "Switch",
+    props: []
+  }, {
+    title: "Text Field",
+    props: []
+  }, {
+    title: "Transfer List",
+    props: []
+  }]
+};
+/* harmony default export */ __webpack_exports__["default"] = (componentGroup);
+
+/***/ }),
+
+/***/ "./src/data/ui_frameworks/material_ui/component_groups/Layouts/index.ts":
+/*!******************************************************************************!*\
+  !*** ./src/data/ui_frameworks/material_ui/component_groups/Layouts/index.ts ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const componentGroup = {
+  iconType: "user",
+  title: "Layout",
+  components: [{
+    title: "Box",
+    props: []
+  }, {
+    title: "Container",
+    props: []
+  }, {
+    title: "Grid",
+    props: []
+  }]
+};
+/* harmony default export */ __webpack_exports__["default"] = (componentGroup);
+
+/***/ }),
+
+/***/ "./src/data/ui_frameworks/material_ui/component_groups/Navigation/index.ts":
+/*!*********************************************************************************!*\
+  !*** ./src/data/ui_frameworks/material_ui/component_groups/Navigation/index.ts ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const componentGroup = {
+  iconType: "user",
+  title: "Navigation",
+  components: [{
+    title: "Bottom Navigation",
+    props: []
+  }, {
+    title: "Breadcrumbs",
+    props: []
+  }, {
+    title: "Drawer",
+    props: []
+  }, {
+    title: "Link",
+    props: []
+  }, {
+    title: "Menu",
+    props: []
+  }, {
+    title: "Stepper",
+    props: []
+  }, {
+    title: "Tabs",
+    props: []
+  }]
+};
+/* harmony default export */ __webpack_exports__["default"] = (componentGroup);
+
+/***/ }),
+
+/***/ "./src/data/ui_frameworks/material_ui/component_groups/Surfaces/index.ts":
+/*!*******************************************************************************!*\
+  !*** ./src/data/ui_frameworks/material_ui/component_groups/Surfaces/index.ts ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const componentGroup = {
+  iconType: "user",
+  title: "Surfaces",
+  components: [{
+    title: "App Bar",
+    props: []
+  }, {
+    title: "Paper",
+    props: [{
+      name: "children",
+      default: null
+    }, {
+      name: "classes",
+      default: null
+    }, {
+      name: "component",
+      default: "div"
+    }, {
+      name: "elevation",
+      default: 1
+    }, {
+      name: "square",
+      default: false
+    }, {
+      name: "variant",
+      default: "elevation"
+    }]
+  }, {
+    title: "Card",
+    props: []
+  }, {
+    title: "Expansion Panel",
+    props: []
+  }]
+};
+/* harmony default export */ __webpack_exports__["default"] = (componentGroup);
+
+/***/ }),
+
+/***/ "./src/data/ui_frameworks/material_ui/component_groups/index.ts":
+/*!**********************************************************************!*\
+  !*** ./src/data/ui_frameworks/material_ui/component_groups/index.ts ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _data_ui_frameworks_material_ui_component_groups_Data_Display__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ~/data/ui_frameworks/material_ui/component_groups/Data_Display */ "./src/data/ui_frameworks/material_ui/component_groups/Data_Display/index.ts");
+/* harmony import */ var _data_ui_frameworks_material_ui_component_groups_Feedback__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ~/data/ui_frameworks/material_ui/component_groups/Feedback */ "./src/data/ui_frameworks/material_ui/component_groups/Feedback/index.ts");
+/* harmony import */ var _data_ui_frameworks_material_ui_component_groups_Inputs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ~/data/ui_frameworks/material_ui/component_groups/Inputs */ "./src/data/ui_frameworks/material_ui/component_groups/Inputs/index.ts");
+/* harmony import */ var _data_ui_frameworks_material_ui_component_groups_Layouts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ~/data/ui_frameworks/material_ui/component_groups/Layouts */ "./src/data/ui_frameworks/material_ui/component_groups/Layouts/index.ts");
+/* harmony import */ var _data_ui_frameworks_material_ui_component_groups_Navigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ~/data/ui_frameworks/material_ui/component_groups/Navigation */ "./src/data/ui_frameworks/material_ui/component_groups/Navigation/index.ts");
+/* harmony import */ var _data_ui_frameworks_material_ui_component_groups_Surfaces__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ~/data/ui_frameworks/material_ui/component_groups/Surfaces */ "./src/data/ui_frameworks/material_ui/component_groups/Surfaces/index.ts");
+
+
+
+
+
+
+const componentGroups = [_data_ui_frameworks_material_ui_component_groups_Layouts__WEBPACK_IMPORTED_MODULE_3__["default"], _data_ui_frameworks_material_ui_component_groups_Inputs__WEBPACK_IMPORTED_MODULE_2__["default"], _data_ui_frameworks_material_ui_component_groups_Navigation__WEBPACK_IMPORTED_MODULE_4__["default"], _data_ui_frameworks_material_ui_component_groups_Surfaces__WEBPACK_IMPORTED_MODULE_5__["default"], _data_ui_frameworks_material_ui_component_groups_Feedback__WEBPACK_IMPORTED_MODULE_1__["default"], _data_ui_frameworks_material_ui_component_groups_Data_Display__WEBPACK_IMPORTED_MODULE_0__["default"]];
+/* harmony default export */ __webpack_exports__["default"] = (componentGroups);
+
+/***/ }),
+
+/***/ "./src/data/ui_frameworks/material_ui/components/Button/component.tsx":
+/*!****************************************************************************!*\
+  !*** ./src/data/ui_frameworks/material_ui/components/Button/component.tsx ***!
+  \****************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -724,14 +986,63 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Button */ "@material-ui/core/Button");
-/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ~/utils */ "./src/utils.ts");
+/* harmony import */ var _props__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./props */ "./src/data/ui_frameworks/material_ui/components/Button/props.ts");
 
-var _jsxFileName = "/Users/yoshiji/webdev/javascript/self_creation/ui_next/src/data/materialComponents.tsx";
+var _jsxFileName = "/Users/yoshiji/webdev/javascript/self_creation/ui_next/src/data/ui_frameworks/material_ui/components/Button/component.tsx";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
-const buttonProps = [{
+
+
+const component = {
+  title: "Button",
+  jsx: __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, Object(_utils__WEBPACK_IMPORTED_MODULE_3__["mapToComponentProps"])(_props__WEBPACK_IMPORTED_MODULE_4__["default"]), {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }), "\u30DC\u30BF\u30F3"),
+  props: _props__WEBPACK_IMPORTED_MODULE_4__["default"]
+};
+/* harmony default export */ __webpack_exports__["default"] = (component);
+
+/***/ }),
+
+/***/ "./src/data/ui_frameworks/material_ui/components/Button/index.ts":
+/*!***********************************************************************!*\
+  !*** ./src/data/ui_frameworks/material_ui/components/Button/index.ts ***!
+  \***********************************************************************/
+/*! exports provided: props, component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component */ "./src/data/ui_frameworks/material_ui/components/Button/component.tsx");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "component", function() { return _component__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _props__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./props */ "./src/data/ui_frameworks/material_ui/components/Button/props.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "props", function() { return _props__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+
+
+
+
+/***/ }),
+
+/***/ "./src/data/ui_frameworks/material_ui/components/Button/props.ts":
+/*!***********************************************************************!*\
+  !*** ./src/data/ui_frameworks/material_ui/components/Button/props.ts ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const props = [{
   name: "children",
   default: null
 }, {
@@ -774,171 +1085,7 @@ const buttonProps = [{
   name: "variant",
   default: "contained"
 }];
-const componentGroups = [{
-  iconType: "user",
-  title: "Layout",
-  components: [{
-    title: "Box",
-    props: []
-  }, {
-    title: "Container",
-    props: []
-  }, {
-    title: "Grid",
-    props: []
-  }]
-}, {
-  iconType: "user",
-  title: "Inputs",
-  components: [{
-    title: "Button",
-    jsx: __jsx(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2___default.a, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, buttonProps.reduce((accumulator, currentValue) => {
-      accumulator[currentValue.name] = currentValue.default;
-      return accumulator;
-    }, {}), {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 80
-      },
-      __self: undefined
-    }), "\u30DC\u30BF\u30F3"),
-    props: buttonProps
-  }, {
-    title: "Checkbox",
-    props: []
-  }, {
-    title: "Date / Time",
-    props: []
-  }, {
-    title: "Radio",
-    props: []
-  }, {
-    title: "Select",
-    props: []
-  }, {
-    title: "Slider",
-    props: []
-  }, {
-    title: "Switch",
-    props: []
-  }, {
-    title: "Text Field",
-    props: []
-  }, {
-    title: "Transfer List",
-    props: []
-  }]
-}, {
-  iconType: "user",
-  title: "Navigation",
-  components: [{
-    title: "Bottom Navigation",
-    props: []
-  }, {
-    title: "Breadcrumbs",
-    props: []
-  }, {
-    title: "Drawer",
-    props: []
-  }, {
-    title: "Link",
-    props: []
-  }, {
-    title: "Menu",
-    props: []
-  }, {
-    title: "Stepper",
-    props: []
-  }, {
-    title: "Tabs",
-    props: []
-  }]
-}, {
-  iconType: "user",
-  title: "Surfaces",
-  components: [{
-    title: "App Bar",
-    props: []
-  }, {
-    title: "Paper",
-    props: [{
-      name: "children",
-      default: null
-    }, {
-      name: "classes",
-      default: null
-    }, {
-      name: "component",
-      default: "div"
-    }, {
-      name: "elevation",
-      default: 1
-    }, {
-      name: "square",
-      default: false
-    }, {
-      name: "variant",
-      default: "elevation"
-    }]
-  }, {
-    title: "Card",
-    props: []
-  }, {
-    title: "Expansion Panel",
-    props: []
-  }]
-}, {
-  iconType: "user",
-  title: "Feedback",
-  components: [{
-    title: "Progress",
-    props: []
-  }, {
-    title: "Dialog",
-    props: []
-  }, {
-    title: "Snackbar",
-    props: []
-  }, {
-    title: "Backdrop",
-    props: []
-  }]
-}, {
-  iconType: "user",
-  title: "Data Display",
-  components: [{
-    title: "Avatar",
-    props: []
-  }, {
-    title: "Badge",
-    props: []
-  }, {
-    title: "Chip",
-    props: []
-  }, {
-    title: "Divider",
-    props: []
-  }, {
-    title: "Icons",
-    props: []
-  }, {
-    title: "Material Icons",
-    props: []
-  }, {
-    title: "List",
-    props: []
-  }, {
-    title: "Table",
-    props: []
-  }, {
-    title: "Tooltip",
-    props: []
-  }, {
-    title: "Typography",
-    props: []
-  }]
-}];
-/* harmony default export */ __webpack_exports__["default"] = (componentGroups);
+/* harmony default export */ __webpack_exports__["default"] = (props);
 
 /***/ }),
 
@@ -1085,12 +1232,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! antd/lib/layout/style */ "./node_modules/antd/lib/layout/style/index.js");
-/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! antd/lib/layout */ "antd/lib/layout");
-/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! antd/lib/layout/style */ "./node_modules/antd/lib/layout/style/index.js");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! antd/lib/layout */ "antd/lib/layout");
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
 /* harmony import */ var immutability_helper__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! immutability-helper */ "immutability-helper");
 /* harmony import */ var immutability_helper__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(immutability_helper__WEBPACK_IMPORTED_MODULE_9__);
@@ -1103,7 +1250,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_DnDContainer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ~/components/DnDContainer */ "./src/components/DnDContainer.tsx");
 /* harmony import */ var _components_LeftSider__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ~/components/LeftSider */ "./src/components/LeftSider.tsx");
 /* harmony import */ var _components_RightSider__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ~/components/RightSider */ "./src/components/RightSider.tsx");
-/* harmony import */ var _data_materialComponents__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ~/data/materialComponents */ "./src/data/materialComponents.tsx");
+/* harmony import */ var _data_ui_frameworks_material_ui_component_groups__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ~/data/ui_frameworks/material_ui/component_groups */ "./src/data/ui_frameworks/material_ui/component_groups/index.ts");
 /* harmony import */ var _layouts_default__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ~/layouts/default */ "./src/layouts/default.tsx");
 /* harmony import */ var _plugins_axios__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ~/plugins/axios */ "./src/plugins/axios.ts");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ~/utils */ "./src/utils.ts");
@@ -1119,7 +1266,7 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "/Users/yoshiji/webdev/javascript/self_creation/ui_next/src/pages/index.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_10__["createElement"];
 
-function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(target, key, source[key]); }); } else if (_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default.a) { _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default()(target, _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default()(source)); } else { ownKeys(Object(source)).forEach(function (key) { _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, key, _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(source, key)); }); } } return target; }
 
@@ -1145,18 +1292,20 @@ const IndexPage = () => {
     0: boxes,
     1: setBoxes
   } = Object(react__WEBPACK_IMPORTED_MODULE_10__["useState"])({});
-  const selectedComponentProps = boxes[selectedKey] && boxes[selectedKey].jsx ? boxes[selectedKey].jsx.props : [];
+  const selectedComponentProps = boxes[selectedKey] && boxes[selectedKey].jsx ? boxes[selectedKey].jsx.props : []; // TODO: マテリアルコンポーネントの設定が終わり、undefinedがくることがなくなれば、`| undefined`は除去する
 
   const addDnDBox = jsx => {
-    const key = Object(_utils__WEBPACK_IMPORTED_MODULE_19__["makeId"])(5);
+    const key = Object(_utils__WEBPACK_IMPORTED_MODULE_19__["makeRandomId"])(5);
     setBoxes(immutability_helper__WEBPACK_IMPORTED_MODULE_9___default()(boxes, {
       // TODO: この部分、型指定が出来ないの、よろしくないのでは？
       $merge: {
         [key]: {
           top: 180,
+          // TODO: 初期値をハードコーディングしておる
           left: 20,
-          jsx: jsx,
+          jsx,
           componentName: "Button",
+          // TODO: コンポーネントネームのハードコーディング
           onClick: () => setSelectedKey(key)
         }
       }
@@ -1182,11 +1331,26 @@ const IndexPage = () => {
     }));
   };
 
-  console.log("selected key = ", selectedKey);
-
   const saveBoxes = () => {
-    console.log("save boxes");
-    _plugins_axios__WEBPACK_IMPORTED_MODULE_18__["default"].put("/save_boxes", boxes).then(res => {
+    // stateのboxのonChangeプロパティ以外を渡す
+    const reqBody = {};
+
+    _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_7___default()(boxes).forEach(key => {
+      const {
+        top,
+        left,
+        jsx,
+        componentName
+      } = boxes[key];
+      reqBody[key] = {
+        top,
+        left,
+        jsx,
+        componentName
+      };
+    });
+
+    _plugins_axios__WEBPACK_IMPORTED_MODULE_18__["default"].put("/save_boxes", reqBody).then(res => {
       console.log(res);
     }).catch(e => {
       console.error(e);
@@ -1196,28 +1360,28 @@ const IndexPage = () => {
   return __jsx(_layouts_default__WEBPACK_IMPORTED_MODULE_17__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 118
     },
     __self: undefined
-  }, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_7___default.a, {
+  }, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_6___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 119
     },
     __self: undefined
   }, __jsx(_components_LeftSider__WEBPACK_IMPORTED_MODULE_14__["default"], {
-    subMenus: _data_materialComponents__WEBPACK_IMPORTED_MODULE_16__["default"],
+    subMenus: _data_ui_frameworks_material_ui_component_groups__WEBPACK_IMPORTED_MODULE_16__["default"],
     selectMenu: addDnDBox,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 120
     },
     __self: undefined
   }), __jsx(react_dnd__WEBPACK_IMPORTED_MODULE_11__["DndProvider"], {
     backend: react_dnd_html5_backend__WEBPACK_IMPORTED_MODULE_12___default.a,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 121
     },
     __self: undefined
   }, __jsx(_components_DnDContainer__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -1226,7 +1390,7 @@ const IndexPage = () => {
     setBoxes: setBoxes,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 122
     },
     __self: undefined
   })), __jsx(_components_RightSider__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -1234,14 +1398,14 @@ const IndexPage = () => {
     onChange: updateBoxProps,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 128
     },
     __self: undefined
   })), __jsx("button", {
     onClick: () => saveBoxes(),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 133
     },
     __self: undefined
   }, "\u30C6\u30B9\u30C8\u7528\u306E\u4FDD\u5B58\u30DC\u30BF\u30F3"));
@@ -1280,13 +1444,14 @@ const instance = axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
 /*!**********************!*\
   !*** ./src/utils.ts ***!
   \**********************/
-/*! exports provided: makeId */
+/*! exports provided: makeRandomId, mapToComponentProps */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makeId", function() { return makeId; });
-const makeId = length => {
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makeRandomId", function() { return makeRandomId; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapToComponentProps", function() { return mapToComponentProps; });
+const makeRandomId = length => {
   let result = "";
   const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   const charactersLength = characters.length;
@@ -1296,6 +1461,13 @@ const makeId = length => {
   }
 
   return result;
+};
+const mapToComponentProps = props => {
+  return props.reduce((accumulator, currentValue) => {
+    if (currentValue.name === "children") return accumulator;
+    accumulator[currentValue.name] = currentValue.default;
+    return accumulator;
+  }, {});
 };
 
 /***/ }),
@@ -1312,14 +1484,14 @@ module.exports = __webpack_require__(/*! /Users/yoshiji/webdev/javascript/self_c
 
 /***/ }),
 
-/***/ "@material-ui/core/Button":
-/*!*******************************************!*\
-  !*** external "@material-ui/core/Button" ***!
-  \*******************************************/
+/***/ "@material-ui/core":
+/*!************************************!*\
+  !*** external "@material-ui/core" ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/Button");
+module.exports = require("@material-ui/core");
 
 /***/ }),
 

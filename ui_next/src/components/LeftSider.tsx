@@ -2,7 +2,11 @@ import { Icon, Menu, Layout } from "antd";
 import * as React from "react";
 import { Dispatch } from "react";
 import { SetStateAction } from "react";
-import { TComponent, TComponentGroup, TProp } from "~/interfaces/menu";
+import {
+  TComponent,
+  TComponentGroup,
+  TProp
+} from "~/interfaces/material_components";
 
 const { SubMenu } = Menu;
 const { Sider } = Layout;

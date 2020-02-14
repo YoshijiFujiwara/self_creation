@@ -1,7 +1,5 @@
-import { Icon, Menu, Layout, Input, Row, Col } from "antd";
+import { Icon, Menu, Layout, Input } from "antd";
 import * as React from "react";
-import { TComponent, TProp } from "~/interfaces/menu";
-import { TBox } from "~/pages";
 
 const { SubMenu } = Menu;
 const { Sider } = Layout;
@@ -10,7 +8,7 @@ export type RightSiderProps = {
   menuItems: {
     [key: string]: any;
   };
-  onChange: Function;
+  onChange: (propName: string, value: any) => void;
 };
 
 const RightSider: React.FC<RightSiderProps> = ({ menuItems, onChange }) => {
