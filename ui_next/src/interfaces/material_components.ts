@@ -1,3 +1,4 @@
+// TODO: 更新したらAPIサーバー側のinterfacesも更新するべし
 export type TProp = {
   name: string;
   default: string | number | boolean | null;
