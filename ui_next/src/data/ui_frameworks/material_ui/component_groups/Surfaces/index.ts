@@ -1,12 +1,20 @@
-import { TComponentGroup } from "~/interfaces/material_components";
+import App from "next/app";
+import {
+  EComponentGroupTitle,
+  EComponentTitle,
+  TComponentGroup
+} from "~/interfaces/material_components";
+
+const { SURFACES } = EComponentGroupTitle;
+const { APP_BAR, PAPER, CARD, EXPANSION_PANEL } = EComponentTitle;
 
 const componentGroup: TComponentGroup = {
   iconType: "user",
-  title: "Surfaces",
+  title: SURFACES,
   components: [
-    { title: "App Bar", props: [] },
+    { title: APP_BAR, props: [] },
     {
-      title: "Paper",
+      title: PAPER,
       props: [
         {
           name: "children",
@@ -34,8 +42,8 @@ const componentGroup: TComponentGroup = {
         }
       ]
     },
-    { title: "Card", props: [] },
-    { title: "Expansion Panel", props: [] }
+    { title: CARD, props: [] },
+    { title: EXPANSION_PANEL, props: [] }
   ]
 };
 

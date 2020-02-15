@@ -1,62 +1,76 @@
-import { TProp } from "~/interfaces/material_components";
+import { TButtonProps } from "./interface";
 
-const props: TProp[] = [
-  {
-    name: "children",
-    default: null
+const props: TButtonProps = {
+  children: {
+    value: "ボタン",
+    default: "ボタン",
+    description: "The content of the button."
   },
-  {
-    name: "classes",
-    default: null
+  classes: {
+    value: null,
+    default: null,
+    description: ""
   },
-  {
-    name: "color",
-    default: "default"
+  color: {
+    value: "default",
+    default: "default",
+    description: ""
   },
-  {
-    name: "component",
-    default: "button"
+  component: {
+    value: "button",
+    default: "button",
+    description: ""
   },
-  {
-    name: "disabled",
-    default: false
+  disabled: {
+    value: false,
+    default: false,
+    description: ""
   },
-  {
-    name: "disableElevation",
-    default: false
+  disableElevation: {
+    value: false,
+    default: false,
+    description: ""
   },
-  {
-    name: "disableFocusRipple",
-    default: false
+  disableFocusRipple: {
+    value: false,
+    default: false,
+    description: ""
   },
-  {
-    name: "disableRipple",
-    default: null
+  disableRipple: {
+    value: false,
+    default: null,
+    description: ""
   },
-  {
-    name: "endIcon",
-    default: null
+  endIcon: {
+    value: null,
+    default: null,
+    description: ""
   },
-  {
-    name: "fullWidth",
-    default: false
+  fullWidth: {
+    value: false,
+    default: false,
+    description: ""
   },
-  {
-    name: "href",
-    default: null
+  href: {
+    value: "",
+    default: null,
+    description: ""
   },
-  {
-    name: "size",
-    default: "medium"
+  size: {
+    value: "medium",
+    default: "medium",
+    description: ""
   },
-  {
-    name: "startIcon",
-    default: null
+  startIcon: {
+    value: null,
+    default: null,
+    description: ""
   },
-  {
-    name: "variant",
-    default: "contained"
+  variant: {
+    value: "contained",
+    default: "text",
+    description: ""
   }
-];
+};
 
 export default props;

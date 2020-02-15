@@ -1,19 +1,35 @@
 import { component as buttonComponent } from "~/data/ui_frameworks/material_ui/components/Button";
-import { TComponentGroup } from "~/interfaces/material_components";
+import {
+  EComponentGroupTitle,
+  EComponentTitle,
+  TComponentGroup
+} from "~/interfaces/material_components";
+
+const { INPUTS } = EComponentGroupTitle;
+const {
+  CHECKBOX,
+  DATE_TIME,
+  RADIO,
+  SELECT,
+  SLIDER,
+  SWITCH,
+  TEXT_FIELD,
+  TRANSFER_LIST
+} = EComponentTitle;
 
 const componentGroup: TComponentGroup = {
   iconType: "user",
-  title: "Inputs",
+  title: INPUTS,
   components: [
     buttonComponent,
-    { title: "Checkbox", props: [] },
-    { title: "Date / Time", props: [] },
-    { title: "Radio", props: [] },
-    { title: "Select", props: [] },
-    { title: "Slider", props: [] },
-    { title: "Switch", props: [] },
-    { title: "Text Field", props: [] },
-    { title: "Transfer List", props: [] }
+    { title: CHECKBOX, props: [] },
+    { title: DATE_TIME, props: [] },
+    { title: RADIO, props: [] },
+    { title: SELECT, props: [] },
+    { title: SLIDER, props: [] },
+    { title: SWITCH, props: [] },
+    { title: TEXT_FIELD, props: [] },
+    { title: TRANSFER_LIST, props: [] }
   ]
 };
 

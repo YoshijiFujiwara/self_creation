@@ -1,13 +1,20 @@
-import { TComponentGroup } from "~/interfaces/material_components";
+import {
+  EComponentGroupTitle,
+  EComponentTitle,
+  TComponentGroup
+} from "~/interfaces/material_components";
+
+const { FEEDBACK } = EComponentGroupTitle;
+const { PROGRESS, DIALOG, SNACKBAR, BACKDROP } = EComponentTitle;
 
 const componentGroup: TComponentGroup = {
   iconType: "user",
-  title: "Feedback",
+  title: FEEDBACK,
   components: [
-    { title: "Progress", props: [] },
-    { title: "Dialog", props: [] },
-    { title: "Snackbar", props: [] },
-    { title: "Backdrop", props: [] }
+    { title: PROGRESS, props: [] },
+    { title: DIALOG, props: [] },
+    { title: SNACKBAR, props: [] },
+    { title: BACKDROP, props: [] }
   ]
 };
 

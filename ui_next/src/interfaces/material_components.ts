@@ -1,64 +1,73 @@
-// TODO: 更新したらAPIサーバー側のinterfacesも更新するべし
-export type TProp = {
-  name: string;
-  default: string | number | boolean | null;
-};
-
-export type TComponent = {
-  title:
-    | "Box"
-    | "Container"
-    | "Grid"
-    | "Button"
-    | "Checkbox"
-    | "Date / Time"
-    | "Radio"
-    | "Select"
-    | "Slider"
-    | "Switch"
-    | "Text Field"
-    | "Transfer List"
-    | "Bottom Navigation"
-    | "Breadcrumbs"
-    | "Drawer"
-    | "Link"
-    | "Menu"
-    | "Stepper"
-    | "Tabs"
-    | "App Bar"
-    | "Paper"
-    | "Card"
-    | "Expansion Panel"
-    | "Progress"
-    | "Dialog"
-    | "Snackbar"
-    | "Backdrop"
-    | "Avatar"
-    | "Badge"
-    | "Chip"
-    | "Divider"
-    | "Icons"
-    | "Material Icons"
-    | "List"
-    | "Table"
-    | "Tooltip"
-    | "Typography";
-  props: TProp[];
-  jsx?: JSX.Element; // TODO: 検証中のため?
-};
-
-export type TComponentGroup = {
-  iconType: string;
-  title:
-    | "Layout"
-    | "Inputs"
-    | "Navigation"
-    | "Surfaces"
-    | "Feedback"
-    | "Data Display";
-  components: TComponent[];
-};
+// コンポーネントにPropを割り当てるとき
+import { TButtonProps } from "~/data/ui_frameworks/material_ui/components/Button/interface";
 
 export type TComponentProps = {
   [key: string]: any;
 };
+
+export type PropProperty = {
+  value: any;
+  default: null;
+  description: string;
+};
+
+export type TComponent = {
+  title: EComponentTitle;
+  props: TButtonProps; // ユニオンタイプで解決すっか
+  jsx?: JSX.Element; // TODO: 検証中のため '?'
+};
+
+export type TComponentGroup = {
+  iconType: string;
+  title: EComponentGroupTitle;
+  components: TComponent[];
+};
+
+export enum EComponentGroupTitle {
+  LAYOUT = "Layout",
+  INPUTS = "Inputs",
+  NAVIGATION = "Navigation",
+  SURFACES = "Surfaces",
+  FEEDBACK = "Feedback",
+  DATA_DISPLAY = "Data Display"
+}
+
+export enum EComponentTitle {
+  BOX = "Box",
+  CONTAINER = "Container",
+  GRID = "Grid",
+  BUTTON = "Button",
+  CHECKBOX = "Checkbox",
+  DATE_TIME = "Date / Time",
+  RADIO = "Radio",
+  SELECT = "Select",
+  SLIDER = "Slider",
+  SWITCH = "Switch",
+  TEXT_FIELD = "Text Field",
+  TRANSFER_LIST = "Transfer List",
+  BOTTOM_NAVIGATION = "Bottom Navigation",
+  BREADCRUMBS = "Breadcrumbs",
+  DRAWER = "Drawer",
+  LINK = "Link",
+  MENU = "Menu",
+  STEPPER = "Stepper",
+  TABS = "Tabs",
+  APP_BAR = "App Bar",
+  PAPER = "Paper",
+  CARD = "Card",
+  EXPANSION_PANEL = "Expansion Panel",
+  PROGRESS = "Progress",
+  DIALOG = "Dialog",
+  SNACKBAR = "Snackbar",
+  BACKDROP = "Backdrop",
+  AVATAR = "Avatar",
+  BADGE = "Badge",
+  CHIP = "Chip",
+  DIVIDER = "Divider",
+  ICONS = "Icons",
+  MATERIAL_ICONS = "Material Icons",
+  LIST = "List",
+  TABLE = "Table",
+  TOOLTIP = "Tooltip",
+  TYPOGRAPHY = "Typography"
+}

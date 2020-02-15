@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -721,38 +721,55 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ~/interfaces/material_components */ "./src/interfaces/material_components.ts");
+
+const {
+  DATA_DISPLAY
+} = _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__["EComponentGroupTitle"];
+const {
+  AVATAR,
+  BADGE,
+  CHIP,
+  DIVIDER,
+  ICONS,
+  MATERIAL_ICONS,
+  LIST,
+  TABLE,
+  TOOLTIP,
+  TYPOGRAPHY
+} = _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__["EComponentTitle"];
 const componentGroup = {
   iconType: "user",
-  title: "Data Display",
+  title: DATA_DISPLAY,
   components: [{
-    title: "Avatar",
+    title: AVATAR,
     props: []
   }, {
-    title: "Badge",
+    title: BADGE,
     props: []
   }, {
-    title: "Chip",
+    title: CHIP,
     props: []
   }, {
-    title: "Divider",
+    title: DIVIDER,
     props: []
   }, {
-    title: "Icons",
+    title: ICONS,
     props: []
   }, {
-    title: "Material Icons",
+    title: MATERIAL_ICONS,
     props: []
   }, {
-    title: "List",
+    title: LIST,
     props: []
   }, {
-    title: "Table",
+    title: TABLE,
     props: []
   }, {
-    title: "Tooltip",
+    title: TOOLTIP,
     props: []
   }, {
-    title: "Typography",
+    title: TYPOGRAPHY,
     props: []
   }]
 };
@@ -769,20 +786,31 @@ const componentGroup = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ~/interfaces/material_components */ "./src/interfaces/material_components.ts");
+
+const {
+  FEEDBACK
+} = _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__["EComponentGroupTitle"];
+const {
+  PROGRESS,
+  DIALOG,
+  SNACKBAR,
+  BACKDROP
+} = _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__["EComponentTitle"];
 const componentGroup = {
   iconType: "user",
-  title: "Feedback",
+  title: FEEDBACK,
   components: [{
-    title: "Progress",
+    title: PROGRESS,
     props: []
   }, {
-    title: "Dialog",
+    title: DIALOG,
     props: []
   }, {
-    title: "Snackbar",
+    title: SNACKBAR,
     props: []
   }, {
-    title: "Backdrop",
+    title: BACKDROP,
     props: []
   }]
 };
@@ -800,33 +828,48 @@ const componentGroup = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _data_ui_frameworks_material_ui_components_Button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ~/data/ui_frameworks/material_ui/components/Button */ "./src/data/ui_frameworks/material_ui/components/Button/index.ts");
+/* harmony import */ var _interfaces_material_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ~/interfaces/material_components */ "./src/interfaces/material_components.ts");
 
+
+const {
+  INPUTS
+} = _interfaces_material_components__WEBPACK_IMPORTED_MODULE_1__["EComponentGroupTitle"];
+const {
+  CHECKBOX,
+  DATE_TIME,
+  RADIO,
+  SELECT,
+  SLIDER,
+  SWITCH,
+  TEXT_FIELD,
+  TRANSFER_LIST
+} = _interfaces_material_components__WEBPACK_IMPORTED_MODULE_1__["EComponentTitle"];
 const componentGroup = {
   iconType: "user",
-  title: "Inputs",
+  title: INPUTS,
   components: [_data_ui_frameworks_material_ui_components_Button__WEBPACK_IMPORTED_MODULE_0__["component"], {
-    title: "Checkbox",
+    title: CHECKBOX,
     props: []
   }, {
-    title: "Date / Time",
+    title: DATE_TIME,
     props: []
   }, {
-    title: "Radio",
+    title: RADIO,
     props: []
   }, {
-    title: "Select",
+    title: SELECT,
     props: []
   }, {
-    title: "Slider",
+    title: SLIDER,
     props: []
   }, {
-    title: "Switch",
+    title: SWITCH,
     props: []
   }, {
-    title: "Text Field",
+    title: TEXT_FIELD,
     props: []
   }, {
-    title: "Transfer List",
+    title: TRANSFER_LIST,
     props: []
   }]
 };
@@ -843,17 +886,27 @@ const componentGroup = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ~/interfaces/material_components */ "./src/interfaces/material_components.ts");
+
+const {
+  LAYOUT
+} = _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__["EComponentGroupTitle"];
+const {
+  BOX,
+  GRID,
+  CONTAINER
+} = _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__["EComponentTitle"];
 const componentGroup = {
   iconType: "user",
-  title: "Layout",
+  title: LAYOUT,
   components: [{
-    title: "Box",
+    title: BOX,
     props: []
   }, {
-    title: "Container",
+    title: CONTAINER,
     props: []
   }, {
-    title: "Grid",
+    title: GRID,
     props: []
   }]
 };
@@ -870,29 +923,43 @@ const componentGroup = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ~/interfaces/material_components */ "./src/interfaces/material_components.ts");
+
+const {
+  NAVIGATION
+} = _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__["EComponentGroupTitle"];
+const {
+  BOTTOM_NAVIGATION,
+  BREADCRUMBS,
+  DRAWER,
+  LINK,
+  MENU,
+  STEPPER,
+  TABS
+} = _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__["EComponentTitle"];
 const componentGroup = {
   iconType: "user",
-  title: "Navigation",
+  title: NAVIGATION,
   components: [{
-    title: "Bottom Navigation",
+    title: BOTTOM_NAVIGATION,
     props: []
   }, {
-    title: "Breadcrumbs",
+    title: BREADCRUMBS,
     props: []
   }, {
-    title: "Drawer",
+    title: DRAWER,
     props: []
   }, {
-    title: "Link",
+    title: LINK,
     props: []
   }, {
-    title: "Menu",
+    title: MENU,
     props: []
   }, {
-    title: "Stepper",
+    title: STEPPER,
     props: []
   }, {
-    title: "Tabs",
+    title: TABS,
     props: []
   }]
 };
@@ -909,14 +976,25 @@ const componentGroup = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ~/interfaces/material_components */ "./src/interfaces/material_components.ts");
+
+const {
+  SURFACES
+} = _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__["EComponentGroupTitle"];
+const {
+  APP_BAR,
+  PAPER,
+  CARD,
+  EXPANSION_PANEL
+} = _interfaces_material_components__WEBPACK_IMPORTED_MODULE_0__["EComponentTitle"];
 const componentGroup = {
   iconType: "user",
-  title: "Surfaces",
+  title: SURFACES,
   components: [{
-    title: "App Bar",
+    title: APP_BAR,
     props: []
   }, {
-    title: "Paper",
+    title: PAPER,
     props: [{
       name: "children",
       default: null
@@ -937,10 +1015,10 @@ const componentGroup = {
       default: "elevation"
     }]
   }, {
-    title: "Card",
+    title: CARD,
     props: []
   }, {
-    title: "Expansion Panel",
+    title: EXPANSION_PANEL,
     props: []
   }]
 };
@@ -988,8 +1066,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ~/utils */ "./src/utils.ts");
-/* harmony import */ var _props__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./props */ "./src/data/ui_frameworks/material_ui/components/Button/props.ts");
+/* harmony import */ var _interfaces_material_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ~/interfaces/material_components */ "./src/interfaces/material_components.ts");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ~/utils */ "./src/utils.ts");
+/* harmony import */ var _props__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./props */ "./src/data/ui_frameworks/material_ui/components/Button/props.ts");
 
 var _jsxFileName = "/Users/yoshiji/webdev/javascript/self_creation/ui_next/src/data/ui_frameworks/material_ui/components/Button/component.tsx";
 
@@ -997,16 +1076,17 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
+
 const component = {
-  title: "Button",
-  jsx: __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, Object(_utils__WEBPACK_IMPORTED_MODULE_3__["mapToComponentProps"])(_props__WEBPACK_IMPORTED_MODULE_4__["default"]), {
+  title: _interfaces_material_components__WEBPACK_IMPORTED_MODULE_3__["EComponentTitle"].BUTTON,
+  jsx: __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, Object(_utils__WEBPACK_IMPORTED_MODULE_4__["mapToComponentProps"])(_props__WEBPACK_IMPORTED_MODULE_5__["default"]), {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: undefined
   }), "\u30DC\u30BF\u30F3"),
-  props: _props__WEBPACK_IMPORTED_MODULE_4__["default"]
+  props: _props__WEBPACK_IMPORTED_MODULE_5__["default"]
 };
 /* harmony default export */ __webpack_exports__["default"] = (component);
 
@@ -1033,6 +1113,39 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/data/ui_frameworks/material_ui/components/Button/interface.ts":
+/*!***************************************************************************!*\
+  !*** ./src/data/ui_frameworks/material_ui/components/Button/interface.ts ***!
+  \***************************************************************************/
+/*! exports provided: EPropName */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EPropName", function() { return EPropName; });
+// [FIY] https://stackoverflow.com/questions/43080547/how-to-override-type-properties-in-typescript
+// [ex] type HexColorLine = Override<Line, { color: number }>
+let EPropName;
+
+(function (EPropName) {
+  EPropName["CHILDREN"] = "children";
+  EPropName["CLASSES"] = "classes";
+  EPropName["COLOR"] = "color";
+  EPropName["COMPONENT"] = "component";
+  EPropName["DISABLED"] = "disabled";
+  EPropName["DISABLE_ELEVATION"] = "disableElevation";
+  EPropName["DISABLE_FOCUS_RIPPLE"] = "disableFocusRipple";
+  EPropName["DISABLE_RIPPLE"] = "disableRipple";
+  EPropName["END_ICON"] = "endIcon";
+  EPropName["FULL_WIDTH"] = "fullWidth";
+  EPropName["HREF"] = "href";
+  EPropName["SIZE"] = "size";
+  EPropName["START_ICON"] = "startIcon";
+  EPropName["VARIANT"] = "variant";
+})(EPropName || (EPropName = {}));
+
+/***/ }),
+
 /***/ "./src/data/ui_frameworks/material_ui/components/Button/props.ts":
 /*!***********************************************************************!*\
   !*** ./src/data/ui_frameworks/material_ui/components/Button/props.ts ***!
@@ -1042,50 +1155,146 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-const props = [{
-  name: "children",
-  default: null
-}, {
-  name: "classes",
-  default: null
-}, {
-  name: "color",
-  default: "default"
-}, {
-  name: "component",
-  default: "button"
-}, {
-  name: "disabled",
-  default: false
-}, {
-  name: "disableElevation",
-  default: false
-}, {
-  name: "disableFocusRipple",
-  default: false
-}, {
-  name: "disableRipple",
-  default: null
-}, {
-  name: "endIcon",
-  default: null
-}, {
-  name: "fullWidth",
-  default: false
-}, {
-  name: "href",
-  default: null
-}, {
-  name: "size",
-  default: "medium"
-}, {
-  name: "startIcon",
-  default: null
-}, {
-  name: "variant",
-  default: "contained"
-}];
+const props = {
+  children: {
+    value: "ボタン",
+    default: "ボタン",
+    description: "The content of the button."
+  },
+  classes: {
+    value: null,
+    default: null,
+    description: ""
+  },
+  color: {
+    value: "default",
+    default: "default",
+    description: ""
+  },
+  component: {
+    value: "button",
+    default: "button",
+    description: ""
+  },
+  disabled: {
+    value: false,
+    default: false,
+    description: ""
+  },
+  disableElevation: {
+    value: false,
+    default: false,
+    description: ""
+  },
+  disableFocusRipple: {
+    value: false,
+    default: false,
+    description: ""
+  },
+  disableRipple: {
+    value: false,
+    default: null,
+    description: ""
+  },
+  endIcon: {
+    value: null,
+    default: null,
+    description: ""
+  },
+  fullWidth: {
+    value: false,
+    default: false,
+    description: ""
+  },
+  href: {
+    value: "",
+    default: null,
+    description: ""
+  },
+  size: {
+    value: "medium",
+    default: "medium",
+    description: ""
+  },
+  startIcon: {
+    value: null,
+    default: null,
+    description: ""
+  },
+  variant: {
+    value: "contained",
+    default: "text",
+    description: ""
+  }
+};
 /* harmony default export */ __webpack_exports__["default"] = (props);
+
+/***/ }),
+
+/***/ "./src/interfaces/material_components.ts":
+/*!***********************************************!*\
+  !*** ./src/interfaces/material_components.ts ***!
+  \***********************************************/
+/*! exports provided: EComponentGroupTitle, EComponentTitle */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EComponentGroupTitle", function() { return EComponentGroupTitle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EComponentTitle", function() { return EComponentTitle; });
+// コンポーネントにPropを割り当てるとき
+let EComponentGroupTitle;
+
+(function (EComponentGroupTitle) {
+  EComponentGroupTitle["LAYOUT"] = "Layout";
+  EComponentGroupTitle["INPUTS"] = "Inputs";
+  EComponentGroupTitle["NAVIGATION"] = "Navigation";
+  EComponentGroupTitle["SURFACES"] = "Surfaces";
+  EComponentGroupTitle["FEEDBACK"] = "Feedback";
+  EComponentGroupTitle["DATA_DISPLAY"] = "Data Display";
+})(EComponentGroupTitle || (EComponentGroupTitle = {}));
+
+let EComponentTitle;
+
+(function (EComponentTitle) {
+  EComponentTitle["BOX"] = "Box";
+  EComponentTitle["CONTAINER"] = "Container";
+  EComponentTitle["GRID"] = "Grid";
+  EComponentTitle["BUTTON"] = "Button";
+  EComponentTitle["CHECKBOX"] = "Checkbox";
+  EComponentTitle["DATE_TIME"] = "Date / Time";
+  EComponentTitle["RADIO"] = "Radio";
+  EComponentTitle["SELECT"] = "Select";
+  EComponentTitle["SLIDER"] = "Slider";
+  EComponentTitle["SWITCH"] = "Switch";
+  EComponentTitle["TEXT_FIELD"] = "Text Field";
+  EComponentTitle["TRANSFER_LIST"] = "Transfer List";
+  EComponentTitle["BOTTOM_NAVIGATION"] = "Bottom Navigation";
+  EComponentTitle["BREADCRUMBS"] = "Breadcrumbs";
+  EComponentTitle["DRAWER"] = "Drawer";
+  EComponentTitle["LINK"] = "Link";
+  EComponentTitle["MENU"] = "Menu";
+  EComponentTitle["STEPPER"] = "Stepper";
+  EComponentTitle["TABS"] = "Tabs";
+  EComponentTitle["APP_BAR"] = "App Bar";
+  EComponentTitle["PAPER"] = "Paper";
+  EComponentTitle["CARD"] = "Card";
+  EComponentTitle["EXPANSION_PANEL"] = "Expansion Panel";
+  EComponentTitle["PROGRESS"] = "Progress";
+  EComponentTitle["DIALOG"] = "Dialog";
+  EComponentTitle["SNACKBAR"] = "Snackbar";
+  EComponentTitle["BACKDROP"] = "Backdrop";
+  EComponentTitle["AVATAR"] = "Avatar";
+  EComponentTitle["BADGE"] = "Badge";
+  EComponentTitle["CHIP"] = "Chip";
+  EComponentTitle["DIVIDER"] = "Divider";
+  EComponentTitle["ICONS"] = "Icons";
+  EComponentTitle["MATERIAL_ICONS"] = "Material Icons";
+  EComponentTitle["LIST"] = "List";
+  EComponentTitle["TABLE"] = "Table";
+  EComponentTitle["TOOLTIP"] = "Tooltip";
+  EComponentTitle["TYPOGRAPHY"] = "Typography";
+})(EComponentTitle || (EComponentTitle = {}));
 
 /***/ }),
 
@@ -1284,6 +1493,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 const IndexPage = () => {
+  // 選択中のボックスのkey
   const {
     0: selectedKey,
     1: setSelectedKey
@@ -1360,13 +1570,13 @@ const IndexPage = () => {
   return __jsx(_layouts_default__WEBPACK_IMPORTED_MODULE_17__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 119
     },
     __self: undefined
   }, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_6___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 120
     },
     __self: undefined
   }, __jsx(_components_LeftSider__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -1374,14 +1584,14 @@ const IndexPage = () => {
     selectMenu: addDnDBox,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 121
     },
     __self: undefined
   }), __jsx(react_dnd__WEBPACK_IMPORTED_MODULE_11__["DndProvider"], {
     backend: react_dnd_html5_backend__WEBPACK_IMPORTED_MODULE_12___default.a,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 122
     },
     __self: undefined
   }, __jsx(_components_DnDContainer__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -1390,7 +1600,7 @@ const IndexPage = () => {
     setBoxes: setBoxes,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 123
     },
     __self: undefined
   })), __jsx(_components_RightSider__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -1398,14 +1608,14 @@ const IndexPage = () => {
     onChange: updateBoxProps,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 129
     },
     __self: undefined
   })), __jsx("button", {
     onClick: () => saveBoxes(),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133
+      lineNumber: 134
     },
     __self: undefined
   }, "\u30C6\u30B9\u30C8\u7528\u306E\u4FDD\u5B58\u30DC\u30BF\u30F3"));
@@ -1451,6 +1661,11 @@ const instance = axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makeRandomId", function() { return makeRandomId; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapToComponentProps", function() { return mapToComponentProps; });
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _data_ui_frameworks_material_ui_components_Button_interface__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ~/data/ui_frameworks/material_ui/components/Button/interface */ "./src/data/ui_frameworks/material_ui/components/Button/interface.ts");
+
+
 const makeRandomId = length => {
   let result = "";
   const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -1463,16 +1678,26 @@ const makeRandomId = length => {
   return result;
 };
 const mapToComponentProps = props => {
-  return props.reduce((accumulator, currentValue) => {
-    if (currentValue.name === "children") return accumulator;
-    accumulator[currentValue.name] = currentValue.default;
+  // TODO: タイプアサーションはあんまり良くないらしい
+  return _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_0___default()(props).reduce((accumulator, propName) => {
+    if (propName === _data_ui_frameworks_material_ui_components_Button_interface__WEBPACK_IMPORTED_MODULE_1__["EPropName"].CLASSES || propName === _data_ui_frameworks_material_ui_components_Button_interface__WEBPACK_IMPORTED_MODULE_1__["EPropName"].COMPONENT) return accumulator;
+    accumulator[propName] = props[propName].value;
     return accumulator;
   }, {});
-};
+}; // export const mapToComponentProps = (props: TProp[]): TComponentProps => {
+//   return props.reduce(
+//     (accumulator: Record<string, any>, currentValue: TProp) => {
+//       if (currentValue.name === "children") return accumulator;
+//       accumulator[currentValue.name] = currentValue.default;
+//       return accumulator;
+//     },
+//     {}
+//   );
+// };
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!***********************************!*\
   !*** multi ./src/pages/index.tsx ***!
   \***********************************/

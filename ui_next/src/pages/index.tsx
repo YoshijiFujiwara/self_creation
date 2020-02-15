@@ -40,6 +40,7 @@ export type TRequestSave = {
 };
 
 const IndexPage: NextPage = () => {
+  // 選択中のボックスのkey
   const [selectedKey, setSelectedKey] = useState<string>("");
 
   const [boxes, setBoxes]: [

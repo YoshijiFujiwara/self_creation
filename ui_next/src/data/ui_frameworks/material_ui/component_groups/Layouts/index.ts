@@ -1,12 +1,19 @@
-import { TComponentGroup } from "~/interfaces/material_components";
+import {
+  EComponentGroupTitle,
+  EComponentTitle,
+  TComponentGroup
+} from "~/interfaces/material_components";
+
+const { LAYOUT } = EComponentGroupTitle;
+const { BOX, GRID, CONTAINER } = EComponentTitle;
 
 const componentGroup: TComponentGroup = {
   iconType: "user",
-  title: "Layout",
+  title: LAYOUT,
   components: [
-    { title: "Box", props: [] },
-    { title: "Container", props: [] },
-    { title: "Grid", props: [] }
+    { title: BOX, props: [] },
+    { title: CONTAINER, props: [] },
+    { title: GRID, props: [] }
   ]
 };
 
