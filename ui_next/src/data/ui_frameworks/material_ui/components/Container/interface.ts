@@ -12,31 +12,40 @@ export enum EPropName {
   MAX_WIDTH = "maxWidth"
 }
 
+const {
+  CHILDREN,
+  CLASSES,
+  COMPONENT,
+  DISABLE_GUTTERS,
+  FIXED,
+  MAX_WIDTH
+} = EPropName;
+
 export type TContainerProps = {
-  [EPropName.CHILDREN]: TPropProperty;
-  [EPropName.CLASSES]: TPropProperty;
-  [EPropName.COMPONENT]: TOverride<
+  [CHILDREN]: TPropProperty;
+  [CLASSES]: TPropProperty;
+  [COMPONENT]: TOverride<
     TPropProperty,
     {
       value: "div";
       default: "div";
     }
   >;
-  [EPropName.DISABLE_GUTTERS]: TOverride<
+  [DISABLE_GUTTERS]: TOverride<
     TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
-  [EPropName.FIXED]: TOverride<
+  [FIXED]: TOverride<
     TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
-  [EPropName.MAX_WIDTH]: TOverride<
+  [MAX_WIDTH]: TOverride<
     TPropProperty,
     {
       value: "xs" | "sm" | "md" | "lg" | "xl" | false;

@@ -7,16 +7,18 @@ export enum EPropName {
   COMPONENT = "component"
 }
 
+const { CHILDREN, CLONE, COMPONENT } = EPropName;
+
 export type TBoxProps = {
-  [EPropName.CHILDREN]: TPropProperty;
-  [EPropName.CLONE]: TOverride<
+  [CHILDREN]: TPropProperty;
+  [CLONE]: TOverride<
     TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
-  [EPropName.COMPONENT]: TOverride<
+  [COMPONENT]: TOverride<
     TPropProperty,
     {
       value: string | Function | object;
