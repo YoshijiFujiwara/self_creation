@@ -5,7 +5,7 @@ export type TComponentProps = {
   [key: string]: any;
 };
 
-export type PropProperty = {
+export type TPropProperty = {
   value: any;
   default: null;
   description: string;

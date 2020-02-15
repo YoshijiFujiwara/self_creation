@@ -1,6 +1,6 @@
 // [FIY] https://stackoverflow.com/questions/43080547/how-to-override-type-properties-in-typescript
 // [ex] type HexColorLine = Override<Line, { color: number }>
-import { PropProperty } from "~/interfaces/material_components";
+import { TPropProperty } from "~/interfaces/material_components";
 
 type Override<T, U> = Pick<T, Exclude<keyof T, keyof U>> & U;
 
@@ -23,77 +23,77 @@ export enum EPropName {
 
 export type TButtonProps = {
   [EPropName.CHILDREN]: Override<
-    PropProperty,
+    TPropProperty,
     {
       default: "ボタン";
     }
   >;
-  [EPropName.CLASSES]: PropProperty;
+  [EPropName.CLASSES]: TPropProperty;
   [EPropName.COLOR]: Override<
-    PropProperty,
+    TPropProperty,
     {
       value: "default" | "inherit" | "primary" | "secondary";
       default: "default";
     }
   >;
   [EPropName.COMPONENT]: Override<
-    PropProperty,
+    TPropProperty,
     {
       value: "button";
       default: "button";
     }
   >;
   [EPropName.DISABLED]: Override<
-    PropProperty,
+    TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
   [EPropName.DISABLE_ELEVATION]: Override<
-    PropProperty,
+    TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
   [EPropName.DISABLE_FOCUS_RIPPLE]: Override<
-    PropProperty,
+    TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
   [EPropName.DISABLE_RIPPLE]: Override<
-    PropProperty,
+    TPropProperty,
     {
       value: boolean;
     }
   >;
-  [EPropName.END_ICON]: PropProperty;
+  [EPropName.END_ICON]: TPropProperty;
   [EPropName.FULL_WIDTH]: Override<
-    PropProperty,
+    TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
   [EPropName.HREF]: Override<
-    PropProperty,
+    TPropProperty,
     {
       value: string;
     }
   >;
   [EPropName.SIZE]: Override<
-    PropProperty,
+    TPropProperty,
     {
       value: "small" | "medium" | "large";
       default: "medium";
     }
   >;
-  [EPropName.START_ICON]: PropProperty;
+  [EPropName.START_ICON]: TPropProperty;
   [EPropName.VARIANT]: Override<
-    PropProperty,
+    TPropProperty,
     {
       value: "text" | "outlined" | "contained";
       default: "text";
