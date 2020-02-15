@@ -53,7 +53,6 @@ export type TGridProps = {
         | "space-between"
         | "space-around";
       default: "stretch";
-      description: "";
     }
   >;
   [ALIGN_ITEMS]: TOverride<
@@ -61,7 +60,6 @@ export type TGridProps = {
     {
       value: "flex-start" | "center" | "flex-end" | "stretch" | "baseline";
       default: "stretch";
-      description: "";
     }
   >;
   [CHILDREN]: TPropProperty;
