@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b331ded7-d13b-474c-8763-6e2f7d345220" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Box/component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Box/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Box/interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Box/props.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/helper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/props.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api_server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/.idea/workspace.xml" afterDir="false" />
@@ -29,12 +28,6 @@
       <change beforePath="$PROJECT_DIR$/../nest-api-server/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../nest-api-server/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ui/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/tslint.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/index/LeftSider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/index/LeftSider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Button/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Button/interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Button/props.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Button/props.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/material_components.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/material_components.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../use_cases/dummy.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../use_cases/dummy2.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../use_cases/dummy_dir2/hoge.js" beforeDir="false" />
@@ -69,7 +62,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Button/component.tsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="252">
@@ -137,11 +130,28 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/index.tsx">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/component.tsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="189">
-                  <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+                  <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+                  <folding>
+                    <element signature="e#0#43#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/index.ts">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/props.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="378">
+                  <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -151,10 +161,23 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/interface.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="130">
+                  <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#163#211#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Button/interface.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="294">
-                  <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+                <state relative-caret-position="126">
+                  <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#162#227#0" expanded="true" />
@@ -184,8 +207,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Button/props.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+                <state relative-caret-position="252">
+                  <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
                 </state>
               </provider>
             </entry>
@@ -249,10 +272,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/DesignBox.tsx" />
-        <option value="$PROJECT_DIR$/src/components/DesignContainer.tsx" />
-        <option value="$PROJECT_DIR$/src/components/example.tsx" />
-        <option value="$PROJECT_DIR$/src/components/Box.tsx" />
         <option value="$PROJECT_DIR$/src/components/interfaces.ts" />
         <option value="$PROJECT_DIR$/src/components/Container.tsx" />
         <option value="$PROJECT_DIR$/src/components/DndBox.tsx" />
@@ -300,6 +319,10 @@
         <option value="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Box/props.ts" />
         <option value="$PROJECT_DIR$/src/utils.ts" />
         <option value="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Box/component.tsx" />
+        <option value="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/index.ts" />
+        <option value="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/interface.ts" />
+        <option value="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/props.ts" />
+        <option value="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/component.tsx" />
       </list>
     </option>
   </component>
@@ -432,6 +455,16 @@
               <item name="ui_next" type="b2602c69:ProjectViewProjectNode" />
               <item name="ui_next" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="ui_frameworks" type="462c0819:PsiDirectoryNode" />
+              <item name="material_ui" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Container" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ui_next" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ui_next" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -465,7 +498,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -486,6 +519,7 @@
       <recent name="$PROJECT_DIR$/src/data" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container" />
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
@@ -525,12 +559,12 @@
       <workItem from="1581678446694" duration="156000" />
       <workItem from="1581678622613" duration="326000" />
       <workItem from="1581678973580" duration="16257000" />
-      <workItem from="1581740312001" duration="9151000" />
+      <workItem from="1581740312001" duration="10601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112764000" />
+    <option name="totallyTimeSpent" value="114214000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -561,7 +595,7 @@
       <window_info anchor="bottom" id="GraphQL" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" weight="0.32987553" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50090414" side_tool="true" weight="0.51556015" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4996986" weight="0.171926" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4996986" visible="true" weight="0.08487486" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -593,34 +627,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/@react-dnd/invariant/dist/invariant.cjs.development.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom-server.node.development.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="3036" column="5" selection-start-line="3036" selection-start-column="5" selection-end-line="3036" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-dnd/lib/hooks/useDrop.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/immutability-helper/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/material_ui_components/Button.tsx" />
     <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -896,16 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Box/component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Box/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -939,24 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Button/props.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Button/interface.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#162#227#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Button/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -971,6 +949,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Box/component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Button/interface.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#162#227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Button/props.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/interface.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#163#211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/props.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/index.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Container/component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
