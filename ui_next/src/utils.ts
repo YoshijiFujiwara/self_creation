@@ -1,8 +1,4 @@
-import {
-  TButtonProps,
-  EPropName
-} from "~/data/ui_frameworks/material_ui/components/Button/interface";
-import { TComponentProps, TProp } from "~/interfaces/material_components";
+import { EPropName } from "~/data/ui_frameworks/material_ui/components/Button/interface";
 
 export const makeRandomId = (length: number): string => {
   let result = "";
@@ -15,10 +11,11 @@ export const makeRandomId = (length: number): string => {
   return result;
 };
 
-export const mapToComponentProps = (props: TButtonProps): TComponentProps => {
+// こういう関数の返り値こそ、推論の方が楽そうだ🧐
+export const mapToComponentProps = (props: { [key: string]: any }) => {
   // TODO: タイプアサーションはあんまり良くないらしい
-  return (Object.keys(props) as EPropName[]).reduce(
-    (accumulator: Record<string, any>, propName: EPropName) => {
+  return (Object.keys(props) as string[]).reduce(
+    (accumulator: Record<string, any>, propName: string) => {
       if (propName === EPropName.CLASSES || propName === EPropName.COMPONENT)
         return accumulator;
       accumulator[propName] = props[propName].value;
@@ -27,14 +24,3 @@ export const mapToComponentProps = (props: TButtonProps): TComponentProps => {
     {}
   );
 };
-
-// export const mapToComponentProps = (props: TProp[]): TComponentProps => {
-//   return props.reduce(
-//     (accumulator: Record<string, any>, currentValue: TProp) => {
-//       if (currentValue.name === "children") return accumulator;
-//       accumulator[currentValue.name] = currentValue.default;
-//       return accumulator;
-//     },
-//     {}
-//   );
-// };

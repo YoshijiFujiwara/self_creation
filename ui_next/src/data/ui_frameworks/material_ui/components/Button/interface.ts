@@ -1,8 +1,7 @@
 // [FIY] https://stackoverflow.com/questions/43080547/how-to-override-type-properties-in-typescript
-// [ex] type HexColorLine = Override<Line, { color: number }>
+// [ex] type HexColorLine = TOverride<Line, { color: number }>
+import { TOverride } from "~/interfaces/helper";
 import { TPropProperty } from "~/interfaces/material_components";
-
-type Override<T, U> = Pick<T, Exclude<keyof T, keyof U>> & U;
 
 export enum EPropName {
   CHILDREN = "children",
@@ -22,69 +21,69 @@ export enum EPropName {
 }
 
 export type TButtonProps = {
-  [EPropName.CHILDREN]: Override<
+  [EPropName.CHILDREN]: TOverride<
     TPropProperty,
     {
       default: "ボタン";
     }
   >;
   [EPropName.CLASSES]: TPropProperty;
-  [EPropName.COLOR]: Override<
+  [EPropName.COLOR]: TOverride<
     TPropProperty,
     {
       value: "default" | "inherit" | "primary" | "secondary";
       default: "default";
     }
   >;
-  [EPropName.COMPONENT]: Override<
+  [EPropName.COMPONENT]: TOverride<
     TPropProperty,
     {
       value: "button";
       default: "button";
     }
   >;
-  [EPropName.DISABLED]: Override<
+  [EPropName.DISABLED]: TOverride<
     TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
-  [EPropName.DISABLE_ELEVATION]: Override<
+  [EPropName.DISABLE_ELEVATION]: TOverride<
     TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
-  [EPropName.DISABLE_FOCUS_RIPPLE]: Override<
+  [EPropName.DISABLE_FOCUS_RIPPLE]: TOverride<
     TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
-  [EPropName.DISABLE_RIPPLE]: Override<
+  [EPropName.DISABLE_RIPPLE]: TOverride<
     TPropProperty,
     {
       value: boolean;
     }
   >;
   [EPropName.END_ICON]: TPropProperty;
-  [EPropName.FULL_WIDTH]: Override<
+  [EPropName.FULL_WIDTH]: TOverride<
     TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
-  [EPropName.HREF]: Override<
+  [EPropName.HREF]: TOverride<
     TPropProperty,
     {
       value: string;
     }
   >;
-  [EPropName.SIZE]: Override<
+  [EPropName.SIZE]: TOverride<
     TPropProperty,
     {
       value: "small" | "medium" | "large";
@@ -92,7 +91,7 @@ export type TButtonProps = {
     }
   >;
   [EPropName.START_ICON]: TPropProperty;
-  [EPropName.VARIANT]: Override<
+  [EPropName.VARIANT]: TOverride<
     TPropProperty,
     {
       value: "text" | "outlined" | "contained";

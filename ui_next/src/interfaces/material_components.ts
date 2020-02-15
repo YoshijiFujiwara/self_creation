@@ -1,9 +1,19 @@
 // コンポーネントにPropを割り当てるとき
-import { TButtonProps } from "~/data/ui_frameworks/material_ui/components/Button/interface";
+import {
+  TBoxProps,
+  EPropName as EBoxPropName
+} from "~/data/ui_frameworks/material_ui/components/Box/interface";
+import {
+  TButtonProps,
+  EPropName as EButtonPropName
+} from "~/data/ui_frameworks/material_ui/components/Button/interface";
 
 export type TComponentProps = {
-  [key: string]: any;
+  [key in TAllPropName]: any;
 };
+
+export type TAllProps = TButtonProps | TBoxProps;
+export type TAllPropName = EBoxPropName | EButtonPropName;
 
 export type TPropProperty = {
   value: any;
@@ -13,7 +23,7 @@ export type TPropProperty = {
 
 export type TComponent = {
   title: EComponentTitle;
-  props: TButtonProps; // ユニオンタイプで解決すっか
+  props: TAllProps | any; // TODO: マテリアルコンポーネントの整備が終われば、|any を外す
   jsx?: JSX.Element; // TODO: 検証中のため '?'
 };
 

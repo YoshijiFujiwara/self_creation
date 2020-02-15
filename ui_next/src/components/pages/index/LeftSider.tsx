@@ -7,7 +7,10 @@ const { Sider } = Layout;
 
 export type LeftSiderProps = {
   subMenus: TComponentGroup[];
-  selectMenu: (jsx: JSX.Element | undefined) => void;
+  selectMenu: (
+    title: TComponent["title"],
+    jsx: JSX.Element | undefined
+  ) => void;
 };
 
 const LeftSider: React.FC<LeftSiderProps> = ({ subMenus, selectMenu }) => {
@@ -33,7 +36,7 @@ const LeftSider: React.FC<LeftSiderProps> = ({ subMenus, selectMenu }) => {
               <Menu.Item
                 key={`${subMenuIndex}-${itemIndex}`}
                 onClick={() => {
-                  selectMenu(item.jsx);
+                  selectMenu(item.title, item.jsx);
                 }}
               >
                 {item.title}

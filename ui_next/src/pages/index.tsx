@@ -54,7 +54,10 @@ const IndexPage: NextPage = () => {
       : [];
 
   // TODO: マテリアルコンポーネントの設定が終わり、undefinedがくることがなくなれば、`| undefined`は除去する
-  const addDnDBox = (jsx: JSX.Element | undefined): void => {
+  const addDnDBox = (
+    title: TComponent["title"],
+    jsx: JSX.Element | undefined
+  ): void => {
     const key = makeRandomId(5);
     setBoxes(
       update(boxes, {
@@ -64,7 +67,7 @@ const IndexPage: NextPage = () => {
             top: 180, // TODO: 初期値をハードコーディングしておる
             left: 20,
             jsx,
-            componentName: "Button", // TODO: コンポーネントネームのハードコーディング
+            componentName: title, // TODO: コンポーネントネームのハードコーディング
             onClick: () => setSelectedKey(key)
           }
         }

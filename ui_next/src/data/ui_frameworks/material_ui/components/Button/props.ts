@@ -67,7 +67,7 @@ const props: TButtonProps = {
     description: ""
   },
   variant: {
-    value: "contained",
+    value: "contained", // 初期配置の時に、ユーザーは'contained'を期待しているだろうので
     default: "text",
     description: ""
   }
