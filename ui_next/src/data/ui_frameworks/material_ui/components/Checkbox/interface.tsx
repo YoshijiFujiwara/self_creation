@@ -1,5 +1,3 @@
-// [FIY] https://stackoverflow.com/questions/43080547/how-to-override-type-properties-in-typescript
-// [ex] type HexColorLine = TOverride<Line, { color: number }>
 import { TOverride } from "~/interfaces/helper";
 import { TPropProperty } from "~/interfaces/material_components";
 
