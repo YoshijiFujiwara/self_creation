@@ -1,3 +1,4 @@
+import { TColorValue } from "~/data/ui_frameworks/material_ui/components/share/interface";
 import { TOverride } from "~/interfaces/helper";
 import { TPropProperty } from "~/interfaces/material_components";
 
@@ -35,7 +36,7 @@ export type TButtonGroupProps = {
   [COLOR]: TOverride<
     TPropProperty,
     {
-      value: "default" | "inherit" | "primary" | "secondary";
+      value: TColorValue;
       default: "default";
     }
   >;

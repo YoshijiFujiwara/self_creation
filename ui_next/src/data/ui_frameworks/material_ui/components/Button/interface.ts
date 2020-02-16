@@ -1,3 +1,4 @@
+import { TColorValue } from "~/data/ui_frameworks/material_ui/components/share/interface";
 import { TOverride } from "~/interfaces/helper";
 import { TPropProperty } from "~/interfaces/material_components";
 
@@ -18,78 +19,95 @@ export enum EPropName {
   VARIANT = "variant"
 }
 
+const {
+  CHILDREN,
+  CLASSES,
+  COLOR,
+  COMPONENT,
+  DISABLED,
+  DISABLE_ELEVATION,
+  DISABLE_FOCUS_RIPPLE,
+  DISABLE_RIPPLE,
+  END_ICON,
+  FULL_WIDTH,
+  HREF,
+  SIZE,
+  START_ICON,
+  VARIANT
+} = EPropName;
+
 export type TButtonProps = {
-  [EPropName.CHILDREN]: TOverride<
+  [CHILDREN]: TOverride<
     TPropProperty,
     {
       default: "ボタン";
     }
   >;
-  [EPropName.CLASSES]: TPropProperty;
-  [EPropName.COLOR]: TOverride<
+  [CLASSES]: TPropProperty;
+  [COLOR]: TOverride<
     TPropProperty,
     {
-      value: "default" | "inherit" | "primary" | "secondary";
+      value: TColorValue;
       default: "default";
     }
   >;
-  [EPropName.COMPONENT]: TOverride<
+  [COMPONENT]: TOverride<
     TPropProperty,
     {
       value: "button";
       default: "button";
     }
   >;
-  [EPropName.DISABLED]: TOverride<
+  [DISABLED]: TOverride<
     TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
-  [EPropName.DISABLE_ELEVATION]: TOverride<
+  [DISABLE_ELEVATION]: TOverride<
     TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
-  [EPropName.DISABLE_FOCUS_RIPPLE]: TOverride<
+  [DISABLE_FOCUS_RIPPLE]: TOverride<
     TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
-  [EPropName.DISABLE_RIPPLE]: TOverride<
+  [DISABLE_RIPPLE]: TOverride<
     TPropProperty,
     {
       value: boolean;
     }
   >;
-  [EPropName.END_ICON]: TPropProperty;
-  [EPropName.FULL_WIDTH]: TOverride<
+  [END_ICON]: TPropProperty;
+  [FULL_WIDTH]: TOverride<
     TPropProperty,
     {
       value: boolean;
       default: false;
     }
   >;
-  [EPropName.HREF]: TOverride<
+  [HREF]: TOverride<
     TPropProperty,
     {
       value: string;
     }
   >;
-  [EPropName.SIZE]: TOverride<
+  [SIZE]: TOverride<
     TPropProperty,
     {
       value: "small" | "medium" | "large";
       default: "medium";
     }
   >;
-  [EPropName.START_ICON]: TPropProperty;
-  [EPropName.VARIANT]: TOverride<
+  [START_ICON]: TPropProperty;
+  [VARIANT]: TOverride<
     TPropProperty,
     {
       value: "text" | "outlined" | "contained";

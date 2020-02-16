@@ -41,6 +41,23 @@ const {
   ZERO_MIN_WIDTH
 } = EPropName;
 
+type TSizeValue =
+  | false
+  | "auto"
+  | true
+  | 1
+  | 2
+  | 3
+  | 4
+  | 5
+  | 6
+  | 7
+  | 8
+  | 9
+  | 10
+  | 11
+  | 12;
+
 export type TGridProps = {
   [ALIGN_CONTENT]: TOverride<
     TPropProperty,
@@ -108,66 +125,21 @@ export type TGridProps = {
   [LG]: TOverride<
     TPropProperty,
     {
-      value:
-        | false
-        | "auto"
-        | true
-        | 1
-        | 2
-        | 3
-        | 4
-        | 5
-        | 6
-        | 7
-        | 8
-        | 9
-        | 10
-        | 11
-        | 12;
+      value: TSizeValue;
       default: false;
     }
   >;
   [MD]: TOverride<
     TPropProperty,
     {
-      value:
-        | false
-        | "auto"
-        | true
-        | 1
-        | 2
-        | 3
-        | 4
-        | 5
-        | 6
-        | 7
-        | 8
-        | 9
-        | 10
-        | 11
-        | 12;
+      value: TSizeValue;
       default: false;
     }
   >;
   [SM]: TOverride<
     TPropProperty,
     {
-      value:
-        | false
-        | "auto"
-        | true
-        | 1
-        | 2
-        | 3
-        | 4
-        | 5
-        | 6
-        | 7
-        | 8
-        | 9
-        | 10
-        | 11
-        | 12;
+      value: TSizeValue;
       default: false;
     }
   >;
@@ -188,44 +160,14 @@ export type TGridProps = {
   [XL]: TOverride<
     TPropProperty,
     {
-      value:
-        | false
-        | "auto"
-        | true
-        | 1
-        | 2
-        | 3
-        | 4
-        | 5
-        | 6
-        | 7
-        | 8
-        | 9
-        | 10
-        | 11
-        | 12;
+      value: TSizeValue;
       default: false;
     }
   >;
   [XS]: TOverride<
     TPropProperty,
     {
-      value:
-        | false
-        | "auto"
-        | true
-        | 1
-        | 2
-        | 3
-        | 4
-        | 5
-        | 6
-        | 7
-        | 8
-        | 9
-        | 10
-        | 11
-        | 12;
+      value: TSizeValue;
       default: false;
     }
   >;
