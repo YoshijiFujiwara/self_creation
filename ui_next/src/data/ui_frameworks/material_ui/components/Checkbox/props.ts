@@ -1,9 +1,9 @@
-import { TButtonGroupProps } from "./interface";
+import { TCheckBoxProps } from "~/data/ui_frameworks/material_ui/components/Checkbox/interface";
 
-const props: TButtonGroupProps = {
-  children: {
-    value: null,
-    default: null,
+const props: TCheckBoxProps = {
+  checked: {
+    value: false,
+    default: false,
     description: ""
   },
   classes: {
@@ -12,38 +12,48 @@ const props: TButtonGroupProps = {
     description: ""
   },
   color: {
-    value: "default",
-    default: "default",
-    description: ""
-  },
-  component: {
-    value: "div",
-    default: "div",
+    value: "secondary",
+    default: "secondary",
     description: ""
   },
   disabled: {
     value: false,
-    default: false,
-    description: ""
-  },
-  disableFocusRipple: {
-    value: false,
-    default: false,
+    default: null,
     description: ""
   },
   disableRipple: {
     value: false,
-    default: false,
+    default: null,
     description: ""
   },
-  fullWidth: {
+  id: {
+    value: "",
+    default: null,
+    description: ""
+  },
+  indeterminate: {
     value: false,
     default: false,
     description: ""
   },
-  orientation: {
-    value: "horizontal",
-    default: "horizontal",
+  inputProps: {
+    value: null,
+    default: null,
+    description: ""
+  },
+  inputRef: {
+    value: null,
+    default: null,
+    description: ""
+  },
+  onChange: {
+    value: null,
+    default: null,
+    description: ""
+  },
+  required: {
+    value: false,
+    default: null,
     description: ""
   },
   size: {
@@ -51,9 +61,14 @@ const props: TButtonGroupProps = {
     default: "medium",
     description: ""
   },
-  variant: {
-    value: "outlined",
-    default: "outlined",
+  type: {
+    value: "",
+    default: "",
+    description: ""
+  },
+  value: {
+    value: null,
+    default: null,
     description: ""
   }
 };
