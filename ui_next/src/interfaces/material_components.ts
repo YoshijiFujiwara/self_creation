@@ -7,6 +7,7 @@ import {
   TButtonProps,
   EPropName as EButtonPropName
 } from "~/data/ui_frameworks/material_ui/components/Button/interface";
+import { TOverride } from "./helper";
 
 export type TComponentProps = {
   [key in TAllPropName]: any;
@@ -20,6 +21,39 @@ export type TPropProperty = {
   default: null;
   description: string;
 };
+
+export type TEMPPropProperty = {
+  value: any;
+  default: null;
+  description: string;
+  changeable: boolean;
+};
+
+export type TBooleanFalseProp = TOverride<
+  TEMPPropProperty,
+  {
+    value: boolean;
+    default: false;
+  }
+>;
+export type TDontChange = TOverride<
+  TEMPPropProperty,
+  {
+    changeable: false;
+  }
+>;
+export type TStringNull = TOverride<
+  TEMPPropProperty,
+  {
+    value: string | null;
+  }
+>;
+export type TFuncNull = TOverride<
+  TEMPPropProperty,
+  {
+    value: Function | null;
+  }
+>;
 
 export type TComponent = {
   title: EComponentTitle;

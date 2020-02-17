@@ -1,3 +1,4 @@
+import { Button } from "@material-ui/core";
 import { Layout } from "antd";
 import update from "immutability-helper";
 import { NextPage } from "next";
@@ -38,6 +39,8 @@ export type TRequestSave = {
     componentName: TComponent["title"];
   };
 };
+
+console.log(Object(Button).Naked.propTypes.color);
 
 const IndexPage: NextPage = () => {
   // 選択中のボックスのkey

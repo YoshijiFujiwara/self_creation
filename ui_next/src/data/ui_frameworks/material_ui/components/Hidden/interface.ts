@@ -1,5 +1,4 @@
 import { TOverride } from "~/interfaces/helper";
-import { TPropProperty } from "~/interfaces/material_components";
 
 export enum EPropName {
   CHILDREN = "children",
