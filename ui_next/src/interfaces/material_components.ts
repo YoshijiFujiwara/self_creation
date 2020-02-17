@@ -36,6 +36,12 @@ export type TBooleanFalseProp = TOverride<
     default: false;
   }
 >;
+export type TBooleanNullProp = TOverride<
+  TEMPPropProperty,
+  {
+    value: boolean | null;
+  }
+>;
 export type TDontChange = TOverride<
   TEMPPropProperty,
   {
