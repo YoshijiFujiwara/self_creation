@@ -42,6 +42,12 @@ export type TBooleanNullProp = TOverride<
     value: boolean | null;
   }
 >;
+export type TNumberNullProp = TOverride<
+  TEMPPropProperty,
+  {
+    value: number | null;
+  }
+>;
 export type TDontChange = TOverride<
   TEMPPropProperty,
   {
