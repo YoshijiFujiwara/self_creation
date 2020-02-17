@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b331ded7-d13b-474c-8763-6e2f7d345220" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/props/interfaces/Alert.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/props/interfaces/AlertTitle.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/props/interfaces/AppBar.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/props/interfaces/Autocomplete.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api_server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api_server/.idea/workspace.xml" afterDir="false" />
@@ -28,9 +24,6 @@
       <change beforePath="$PROJECT_DIR$/../nest-api-server/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../nest-api-server/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ui/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ui/tslint.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Hidden/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Hidden/interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/material_components.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/material_components.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../use_cases/dummy.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../use_cases/dummy2.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../use_cases/dummy_dir2/hoge.js" beforeDir="false" />
@@ -51,18 +44,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Hidden/interface.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/interfaces/material_components.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -159,11 +140,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/props/interfaces/ButtonGroup.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
               <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/props/interfaces/ButtonBase.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -490,12 +483,12 @@
       <workItem from="1581678622613" duration="326000" />
       <workItem from="1581678973580" duration="16257000" />
       <workItem from="1581740312001" duration="21941000" />
-      <workItem from="1581897671238" duration="6485000" />
+      <workItem from="1581897671238" duration="8921000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132039000" />
+    <option name="totallyTimeSpent" value="134475000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -536,13 +529,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Grid/props.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="87" column="3" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/Grid/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -959,6 +945,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/ui_frameworks/material_ui/components/props/interfaces/ButtonBase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
