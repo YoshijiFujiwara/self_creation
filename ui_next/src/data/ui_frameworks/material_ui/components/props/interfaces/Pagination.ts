@@ -1,10 +1,7 @@
 import { TOverride } from "~/interfaces/helper";
 import {
   TEMPPropProperty,
-  TDontChange,
   TBooleanFalseProp,
-  TStringNull,
-  TBooleanNullProp,
   TFuncNull
 } from "~/interfaces/material_components";
 
