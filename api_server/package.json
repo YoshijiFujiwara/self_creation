@@ -14,7 +14,7 @@
     "escodegen-wallaby": "^1.6.27",
     "esprima": "^4.0.1",
     "estraverse": "^4.3.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "node-html-parser": "^1.1.16"
   },
   "devDependencies": {
